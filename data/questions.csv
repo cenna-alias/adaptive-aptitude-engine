@@ -1,0 +1,401 @@
+id,topic,subtopic,difficulty,question,option_a,option_b,option_c,option_d,correct_option,explanation
+1,Quantitative Aptitude,Percentages,easy,What is 45% of 960?,432,864,393.6,480,A,45% of 960 = 960 x 45/100 = 432.
+2,Quantitative Aptitude,Percentages,medium,A salary increases from Rs.800 to Rs.1120. What is the percentage increase?,45%,35%,40%,29%,C,Increase = 320; % = 320/800 x 100 = 40%.
+3,Quantitative Aptitude,Profit and Loss,easy,An article bought for Rs.1200 is sold for Rs.1560. Find the profit percent.,30%,40%,35%,26%,A,Profit = 360; Profit% = 360/1200 x 100 = 30%.
+4,Quantitative Aptitude,Profit and Loss,hard,A shirt marked at Rs.800 is sold after two successive discounts of 10% and 10%. Find the selling price.,688,640,613,648,D,SP = 800 x 90/100 x 90/100 = Rs.648.
+5,Quantitative Aptitude,Time and Work,medium,"A can finish a job in 8 days and B in 20 days. Working together, how many days will they take?",14,7.21,5.71,4.51,C,Together = (8x20)/(8+20) = 40/7 = 5.71 days.
+6,Quantitative Aptitude,Time and Work,medium,"Pipe A fills a tank in 10 hours and pipe B in 30 hours. If both are opened together, in how many hours will the tank be full?",40,9.5,6,7.5,D,1/10 + 1/30 = (10+30)/300; time = 300/40 = 7.5 hours.
+7,Quantitative Aptitude,Time Speed Distance,easy,A car travels at 80 km/h for 5 hours. What distance does it cover?,480 km,360 km,800 km,400 km,D,Distance = speed x time = 80 x 5 = 400 km.
+8,Quantitative Aptitude,Time Speed Distance,hard,A train 180 m long runs at 54 km/h. How many seconds does it take to cross a pole?,12,15,9.5,3.33,A,Speed = 54 x 5/18 = 15 m/s; time = 180/15 = 12.0 s.
+9,Quantitative Aptitude,Averages,easy,"Find the average of the numbers 33, 14, 60, 15, 73, 94.",289,48.17,50.67,45.17,B,Sum = 289; average = 289/6 = 48.17.
+10,Quantitative Aptitude,Averages,medium,The average age of 15 students is 32 years. A new student aged 81 joins. What is the new average?,33.56,35.06,33,37.06,B,New average = (15x32 + 81)/16 = 35.06 years.
+11,Quantitative Aptitude,Ratio and Proportion,easy,Rs.40 is divided between two friends in the ratio 2:3. Find the smaller share.,16,24,46,20,A,Smaller share = 40 x 2/5 = Rs.16.
+12,Quantitative Aptitude,Interest,easy,Find the simple interest on Rs.5000 at 12% per annum for 5 years.,3000,6000,3100,2950,A,SI = PRT/100 = 5000 x 12 x 5/100 = Rs.3000.
+13,Quantitative Aptitude,Interest,hard,"Find the compound interest on Rs.12500 at 4% per annum for 2 years, compounded annually.",975,1020,1000,1080,B,CI = 12500[(1+4/100)^2 - 1] = Rs.1020.
+14,Quantitative Aptitude,Probability,medium,"A bag has 3 red, 5 blue and 3 green balls. One ball is drawn at random. What is the probability that it is red?",3/11,3/11 1,5/11,3/8,A,P(red) = 3/11 = 3/11.
+15,Quantitative Aptitude,Permutation and Combination,medium,In how many ways can the letters of the word PLACE be arranged? (all letters distinct),240,25,60,120,D,5 distinct letters -> 5! = 120 arrangements.
+16,Quantitative Aptitude,Number System,easy,"Find the next term: 7, 21, 63, 189, ?",570,192,378,567,D,Each term is multiplied by 3; next = 189 x 3 = 567.
+17,Quantitative Aptitude,Number System,medium,Find the LCM of 12 and 21.,84,252,3,42,A,"LCM = (12x21)/HCF(12,21) = 252/3 = 84."
+18,Quantitative Aptitude,Ages,medium,The present ages of A and B are in the ratio 5:6 and their total age is 55 years. What will be A's age after 6 years?,36,31,49,19,B,A = 55 x 5/11 = 25; after 6 years = 31.
+19,Quantitative Aptitude,Mixtures,medium,A 100 litre mixture contains milk and water in which milk is 75%. How many litres of water does it contain?,50 L,25 L,75 L,30 L,B,Water% = 25; water = 100 x 25/100 = 25 L.
+20,Logical Reasoning,Number Series,easy,"Complete the series: 13, 17, 21, 25, 29, ?",35,37,33,32,C,Common difference is 4; next term = 29 + 4 = 33.
+21,Logical Reasoning,Number Series,medium,"Find the missing term: 16, 25, 36, 49, ?",69,64,16,56,B,Terms are squares of 4 to 7; next = 8^2 = 64.
+22,Logical Reasoning,Number Series,medium,"What comes next: 4, 3, 7, 10, 17, ?",34,29,24,27,D,Each term is the sum of the previous two; next = 17 + 10 = 27.
+23,Logical Reasoning,Coding Decoding,medium,"If KEY is coded as LFZ, how is TAP coded?",VCR,UBQ,SZO,PAT,B,"Each letter moves 1 step(s) forward, so TAP -> UBQ."
+24,Logical Reasoning,Blood Relations,medium,X is the brother of Y. Y is the mother of Z. How is X related to Z?,Cousin,Grandfather,Father,Maternal uncle,D,"X is the brother of Z's mother, so maternal uncle."
+25,Logical Reasoning,Direction Sense,medium,"A man walks 8 km north, then turns right and walks 3 km. How far is he from the starting point?",5 km,8.54 km,10.54 km,11 km,B,The path forms a right triangle: sqrt(8^2 + 3^2) = 8.54 km.
+26,Logical Reasoning,Odd One Out,easy,"Choose the odd one out: 11, 13, 17, 21.",11,21,17,13,B,21 is not a prime number.
+27,Logical Reasoning,Syllogism,hard,Statements: All cats are animals. Some animals are wild. Conclusion?,All cats are wild,No cat is wild,All animals are cats,Some animals are wild,D,Only the given particular statement can be restated; nothing follows about cats.
+28,Logical Reasoning,Seating Arrangement,medium,"Eshan, Chitra, Bala, Deepa, Gita sit in a row in that order from left to right. Who is exactly in the middle?",Eshan,Chitra,Bala,Deepa,C,"With 5 people, the 3rd from left is the middle person: Bala."
+29,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 7:20?,90 degrees,210 degrees,100 degrees,115 degrees,C,Angle = |30H - 5.5M| = |30x7 - 5.5x20| = 100 degrees.
+30,Logical Reasoning,Calendars,hard,"If today is Saturday, what day will it be after 100 days?",Saturday,Sunday,Tuesday,Monday,D,100 mod 7 = 2; counting 2 day(s) from Saturday gives Monday.
+31,Logical Reasoning,Analogy,easy,Author : Book :: Composer : ?,Orchestra,Symphony,Stage,Piano,B,Creator to creation relationship.
+32,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Deter'.,Encourage,Assist,Permit,Discourage,D,'Deter' means 'Discourage'.
+33,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Scarcity'.,Need,Lack,Shortage,Abundance,D,The opposite of 'Scarcity' is 'Abundance'.
+34,Verbal Ability,Sentence Completion,medium,The new policy will ______ into force next month.,come,put,take,go,A,The idiom is 'come into force'.
+35,Verbal Ability,Error Spotting,medium,Spot the error: 'She did not came yesterday.',no error,She,yesterday,did not came,D,After 'did not' the base form 'come' is used.
+36,Verbal Ability,Reading Comprehension,hard,"Read the passage: 'Feedback is most useful when it identifies the specific topic in which a learner is weak, instead of reporting only a total score.' What makes feedback most useful?",A ranking list,A single total score,Topic level detail,A pass certificate,C,The passage prefers topic-specific feedback over a total score.
+37,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 240, February: 160, March: 180, April: 160. What is the total number of units sold in these four months?",710,370,760,740,D,Total = 240 + 160 + 180 + 160 = 740.
+38,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 60, Tue: 65, Wed: 40, Thu: 55, Fri: 35. What is the average number of visitors per day?",255,51,47,56,B,Average = 255/5 = 51.0.
+39,Data Interpretation,Pie Chart,medium,"In a pie chart of total expenditure Rs.9000, the sector for transport is 90 degrees. What is the expenditure on transport?",2250,3150,1500,900,A,Expenditure = 9000 x 90/360 = Rs.2250.
+40,Data Interpretation,Bar Graph,medium,A bar graph shows production of 250 units in 2024 and 300 units in 2025. What is the percentage growth?,30%,50%,15%,20%,D,Growth = (300 - 250)/250 x 100 = 20%.
+41,Data Interpretation,Table Analysis,hard,In a survey 200 people preferred tea and 100 preferred coffee. What is the ratio of tea to coffee drinkers?,3:1,1:2,2:1,200:110,C,Ratio = 200:100 = 2:1 after dividing by HCF 100.
+42,Data Interpretation,Pie Chart,easy,"Out of 500 students surveyed, 240 chose software roles. What percentage chose software roles?",45%,53%,48%,240%,C,Percentage = 240/500 x 100 = 48%.
+43,Quantitative Aptitude,Percentages,easy,What is 45% of 450?,184.5,202.5,405,225,B,45% of 450 = 450 x 45/100 = 202.5.
+44,Quantitative Aptitude,Percentages,medium,A salary increases from Rs.710 to Rs.994. What is the percentage increase?,45%,40%,35%,29%,B,Increase = 284; % = 284/710 x 100 = 40%.
+45,Quantitative Aptitude,Profit and Loss,easy,An article bought for Rs.900 is sold for Rs.1125. Find the profit percent.,21%,35%,30%,25%,D,Profit = 225; Profit% = 225/900 x 100 = 25%.
+46,Quantitative Aptitude,Profit and Loss,hard,A shirt marked at Rs.1000 is sold after two successive discounts of 25% and 12%. Find the selling price.,700,630,660,625,C,SP = 1000 x 75/100 x 88/100 = Rs.660.
+47,Quantitative Aptitude,Time and Work,medium,"A can finish a job in 15 days and B in 30 days. Working together, how many days will they take?",10,11.5,8.8,22.5,A,Together = (15x30)/(15+30) = 10/1 = 10.0 days.
+48,Quantitative Aptitude,Time and Work,medium,"Pipe A fills a tank in 20 hours and pipe B in 20 hours. If both are opened together, in how many hours will the tank be full?",40,10,8.5,12,B,1/20 + 1/20 = (20+20)/400; time = 400/40 = 10.0 hours.
+49,Quantitative Aptitude,Time Speed Distance,easy,A car travels at 50 km/h for 2.5 hours. What distance does it cover?,100 km,175 km,250 km,125 km,D,Distance = speed x time = 50 x 2.5 = 125 km.
+50,Quantitative Aptitude,Time Speed Distance,hard,A train 120 m long runs at 72 km/h. How many seconds does it take to cross a pole?,6,3.5,1.67,9,A,Speed = 72 x 5/18 = 20 m/s; time = 120/20 = 6.0 s.
+51,Quantitative Aptitude,Averages,easy,"Find the average of the numbers 88, 90, 17, 32, 25, 23.",45.83,48.33,275,42.83,A,Sum = 275; average = 275/6 = 45.83.
+52,Quantitative Aptitude,Averages,medium,The average age of 20 students is 39 years. A new student aged 117 joins. What is the new average?,44.71,40,42.71,41.21,C,New average = (20x39 + 117)/21 = 42.71 years.
+53,Quantitative Aptitude,Ratio and Proportion,easy,Rs.156 is divided between two friends in the ratio 5:8. Find the smaller share.,90,60,78,96,B,Smaller share = 156 x 5/13 = Rs.60.
+54,Quantitative Aptitude,Interest,easy,Find the simple interest on Rs.4000 at 5% per annum for 5 years.,2000,960,1000,1080,C,SI = PRT/100 = 4000 x 5 x 5/100 = Rs.1000.
+55,Quantitative Aptitude,Interest,hard,"Find the compound interest on Rs.8000 at 10% per annum for 2 years, compounded annually.",1740,1680,1600,1635,B,CI = 8000[(1+10/100)^2 - 1] = Rs.1680.
+56,Quantitative Aptitude,Probability,medium,"A bag has 7 red, 7 blue and 5 green balls. One ball is drawn at random. What is the probability that it is red?",7/19 1,7/12,7/19,5/19,C,P(red) = 7/19 = 7/19.
+57,Quantitative Aptitude,Permutation and Combination,medium,In how many ways can the letters of the word BRAIN be arranged? (all letters distinct),240,120,25,60,B,5 distinct letters -> 5! = 120 arrangements.
+58,Quantitative Aptitude,Number System,easy,"Find the next term: 3, 9, 27, 81, ?",246,243,162,84,B,Each term is multiplied by 3; next = 81 x 3 = 243.
+59,Quantitative Aptitude,Number System,medium,Find the LCM of 20 and 40.,43,20,40,800,C,"LCM = (20x40)/HCF(20,40) = 800/20 = 40."
+60,Quantitative Aptitude,Ages,medium,The present ages of A and B are in the ratio 2:3 and their total age is 25 years. What will be A's age after 8 years?,2,18,23,17,B,A = 25 x 2/5 = 10; after 8 years = 18.
+61,Quantitative Aptitude,Mixtures,medium,A 80 litre mixture contains milk and water in which milk is 60%. How many litres of water does it contain?,32 L,64 L,37 L,48 L,A,Water% = 40; water = 80 x 40/100 = 32 L.
+62,Logical Reasoning,Number Series,easy,"Complete the series: 6, 10, 14, 18, 22, ?",25,28,30,26,D,Common difference is 4; next term = 22 + 4 = 26.
+63,Logical Reasoning,Number Series,medium,"Find the missing term: 9, 16, 25, 36, ?",49,14,54,42,A,Terms are squares of 3 to 6; next = 7^2 = 49.
+64,Logical Reasoning,Number Series,medium,"What comes next: 6, 3, 9, 12, 21, ?",35,30,42,33,D,Each term is the sum of the previous two; next = 21 + 12 = 33.
+65,Logical Reasoning,Coding Decoding,medium,"If LOG is coded as MPH, how is VAN coded?",XCP,UZM,WBO,NAV,C,"Each letter moves 1 step(s) forward, so VAN -> WBO."
+66,Logical Reasoning,Blood Relations,medium,D is the husband of E. F is the only son of E. How is F related to D?,Brother,Father,Son,Nephew,C,"F is the son of D's wife E, hence D's son."
+67,Logical Reasoning,Direction Sense,medium,"A man walks 4 km north, then turns right and walks 4 km. How far is he from the starting point?",5.66 km,7.66 km,0 km,8 km,A,The path forms a right triangle: sqrt(4^2 + 4^2) = 5.66 km.
+68,Logical Reasoning,Odd One Out,easy,"Choose the odd one out: Kilogram, Metre, Litre, Celsius.",Metre,Kilogram,Litre,Celsius,D,"Celsius measures temperature; others measure mass, length and volume."
+69,Logical Reasoning,Syllogism,hard,Statements: All pens are books. All books are papers. Conclusion?,No pen is a paper,All papers are pens,Some papers are not books,All pens are papers,D,Chaining both universal statements gives: all pens are papers.
+70,Logical Reasoning,Seating Arrangement,medium,"Farid, Eshan, Bala, Deepa, Gita sit in a row in that order from left to right. Who is exactly in the middle?",Farid,Bala,Deepa,Eshan,B,"With 5 people, the 3rd from left is the middle person: Bala."
+71,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 4:00?,120 degrees,120 degrees 1,135 degrees,110 degrees,A,Angle = |30H - 5.5M| = |30x4 - 5.5x0| = 120 degrees.
+72,Logical Reasoning,Calendars,hard,"If today is Wednesday, what day will it be after 123 days?",Saturday,Sunday,Monday,Wednesday,B,123 mod 7 = 4; counting 4 day(s) from Wednesday gives Sunday.
+73,Logical Reasoning,Analogy,easy,Eye : Sight :: Ear : ?,Sound,Noise,Head,Hearing,D,Organ to the sense it provides.
+74,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Enhance'.,Reduce,Damage,Improve,Delay,C,'Enhance' means 'Improve'.
+75,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Insult'.,Abuse,Blame,Mock,Praise,D,The opposite of 'Insult' is 'Praise'.
+76,Verbal Ability,Sentence Completion,medium,The children were ______ by the magician's tricks.,fascination,fascinating,fascinate,fascinated,D,A past participle is needed in the passive voice.
+77,Verbal Ability,Error Spotting,medium,Spot the error: 'I am living here since 2015.',no error,since 2015,here,am living,D,Present perfect continuous is needed: 'have been living'.
+78,Verbal Ability,Reading Comprehension,hard,Read the passage: 'Aptitude tests measure reasoning speed under time pressure. Practice reduces the time taken per question far more than it increases raw intelligence.' What is the main benefit of practice?,Reduced time per question,Fewer topics,Easier questions,Higher intelligence,A,The passage credits practice with cutting time per question.
+79,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 160, February: 180, March: 220, April: 140. What is the total number of units sold in these four months?",670,700,720,350,B,Total = 160 + 180 + 220 + 140 = 700.
+80,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 45, Tue: 35, Wed: 60, Thu: 35, Fri: 35. What is the average number of visitors per day?",42,210,47,38,A,Average = 210/5 = 42.0.
+81,Data Interpretation,Pie Chart,medium,"In a pie chart of total expenditure Rs.4800, the sector for transport is 144 degrees. What is the expenditure on transport?",1520,1440,1920,2400,C,Expenditure = 4800 x 144/360 = Rs.1920.
+82,Data Interpretation,Bar Graph,medium,A bar graph shows production of 300 units in 2024 and 450 units in 2025. What is the percentage growth?,50%,60%,150%,45%,A,Growth = (450 - 300)/300 x 100 = 50%.
+83,Data Interpretation,Table Analysis,hard,In a survey 300 people preferred tea and 120 preferred coffee. What is the ratio of tea to coffee drinkers?,2:5,300:130,5:2,2:1,C,Ratio = 300:120 = 5:2 after dividing by HCF 60.
+84,Data Interpretation,Pie Chart,easy,"Out of 1200 students surveyed, 150 chose software roles. What percentage chose software roles?",12.5%,150%,9.5%,17.5%,A,Percentage = 150/1200 x 100 = 12.5%.
+85,Quantitative Aptitude,Percentages,easy,What is 25% of 240?,120,72,50.4,60,D,25% of 240 = 240 x 25/100 = 60.
+86,Quantitative Aptitude,Percentages,medium,A salary increases from Rs.660 to Rs.990. What is the percentage increase?,50%,55%,45%,33%,A,Increase = 330; % = 330/660 x 100 = 50%.
+87,Quantitative Aptitude,Profit and Loss,easy,An article bought for Rs.500 is sold for Rs.700. Find the profit percent.,40%,45%,36%,50%,A,Profit = 200; Profit% = 200/500 x 100 = 40%.
+88,Quantitative Aptitude,Profit and Loss,hard,A shirt marked at Rs.2500 is sold after two successive discounts of 15% and 10%. Find the selling price.,1875,1912.5,1952.5,1877.5,B,SP = 2500 x 85/100 x 90/100 = Rs.1912.5.
+89,Quantitative Aptitude,Time and Work,medium,"A can finish a job in 10 days and B in 16 days. Working together, how many days will they take?",4.95,13,7.65,6.15,D,Together = (10x16)/(10+16) = 80/13 = 6.15 days.
+90,Quantitative Aptitude,Time and Work,medium,"Pipe A fills a tank in 12 hours and pipe B in 30 hours. If both are opened together, in how many hours will the tank be full?",8.57,10.57,7.07,42,A,1/12 + 1/30 = (12+30)/360; time = 360/42 = 8.57 hours.
+91,Quantitative Aptitude,Time Speed Distance,easy,A car travels at 45 km/h for 5 hours. What distance does it cover?,225 km,202.5 km,450 km,270 km,A,Distance = speed x time = 45 x 5 = 225 km.
+92,Quantitative Aptitude,Time Speed Distance,hard,A train 150 m long runs at 60 km/h. How many seconds does it take to cross a pole?,6.5,9,12,2.5,B,Speed = 60 x 5/18 = 16.67 m/s; time = 150/16.67 = 9.0 s.
+93,Quantitative Aptitude,Averages,easy,"Find the average of the numbers 43, 41, 62, 19, 17, 94, 94, 27.",397,46.62,49.62,52.12,C,Sum = 397; average = 397/8 = 49.62.
+94,Quantitative Aptitude,Averages,medium,The average age of 15 students is 58 years. A new student aged 77 joins. What is the new average?,59,59.19,57.69,61.19,B,New average = (15x58 + 77)/16 = 59.19 years.
+95,Quantitative Aptitude,Ratio and Proportion,easy,Rs.192 is divided between two friends in the ratio 7:9. Find the smaller share.,84,108,96,114,A,Smaller share = 192 x 7/16 = Rs.84.
+96,Quantitative Aptitude,Interest,easy,Find the simple interest on Rs.2000 at 10% per annum for 5 years.,1000,980,2000,1040,A,SI = PRT/100 = 2000 x 10 x 5/100 = Rs.1000.
+97,Quantitative Aptitude,Interest,hard,"Find the compound interest on Rs.5000 at 4% per annum for 2 years, compounded annually.",408,468,363,400,A,CI = 5000[(1+4/100)^2 - 1] = Rs.408.
+98,Quantitative Aptitude,Probability,medium,"A bag has 6 red, 5 blue and 2 green balls. One ball is drawn at random. What is the probability that it is red?",2/13,5/13,6/13,6/7,C,P(red) = 6/13 = 6/13.
+99,Quantitative Aptitude,Number System,easy,"Find the next term: 8, 24, 72, 216, ?",432,648,651,219,B,Each term is multiplied by 3; next = 216 x 3 = 648.
+100,Quantitative Aptitude,Number System,medium,Find the LCM of 18 and 48.,144,864,72,6,A,"LCM = (18x48)/HCF(18,48) = 864/6 = 144."
+101,Quantitative Aptitude,Ages,medium,The present ages of A and B are in the ratio 2:3 and their total age is 25 years. What will be A's age after 6 years?,16,4,19,21,A,A = 25 x 2/5 = 10; after 6 years = 16.
+102,Quantitative Aptitude,Mixtures,medium,A 40 litre mixture contains milk and water in which milk is 70%. How many litres of water does it contain?,12 L,24 L,28 L,17 L,A,Water% = 30; water = 40 x 30/100 = 12 L.
+103,Logical Reasoning,Number Series,easy,"Complete the series: 6, 16, 26, 36, 46, ?",58,56,66,55,B,Common difference is 10; next term = 46 + 10 = 56.
+104,Logical Reasoning,Number Series,medium,"What comes next: 6, 2, 8, 10, 18, ?",30,25,28,36,C,Each term is the sum of the previous two; next = 18 + 10 = 28.
+105,Logical Reasoning,Coding Decoding,medium,"If PEN is coded as TIR, how is CAB coded?",YWX,GEF,HFG,BAC,B,"Each letter moves 4 step(s) forward, so CAB -> GEF."
+106,Logical Reasoning,Blood Relations,medium,P is the father of Q and Q is the daughter of R. How is R related to P?,Daughter,Sister,Mother,Wife,D,"Q's parents are P and R, so R is P's wife."
+107,Logical Reasoning,Direction Sense,medium,"A man walks 5 km north, then turns right and walks 3 km. How far is he from the starting point?",5.83 km,7.83 km,2 km,8 km,A,The path forms a right triangle: sqrt(5^2 + 3^2) = 5.83 km.
+108,Logical Reasoning,Odd One Out,easy,"Choose the odd one out: Rose, Lily, Mango, Lotus.",Mango,Lily,Rose,Lotus,A,Mango is a fruit; others are flowers.
+109,Logical Reasoning,Syllogism,hard,Statements: All engineers are graduates. Some graduates are employed. Conclusion?,All engineers are employed,No engineer is employed,All graduates are engineers,Some engineers may be employed,D,Only a possibility can be drawn from a particular premise.
+110,Logical Reasoning,Seating Arrangement,medium,"Farid, Eshan, Amit, Gita, Chitra sit in a row in that order from left to right. Who is exactly in the middle?",Gita,Farid,Eshan,Amit,D,"With 5 people, the 3rd from left is the middle person: Amit."
+111,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 10:40?,80 degrees,300 degrees,95 degrees,70 degrees,A,Angle = |30H - 5.5M| = |30x10 - 5.5x40| = 80 degrees.
+112,Logical Reasoning,Calendars,hard,"If today is Sunday, what day will it be after 200 days?",Friday,Wednesday,Sunday,Thursday,D,200 mod 7 = 4; counting 4 day(s) from Sunday gives Thursday.
+113,Logical Reasoning,Analogy,easy,Pen : Write :: Knife : ?,Cut,Metal,Sharp,Kitchen,A,Each tool is matched with its function.
+114,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Concise'.,Vague,Loud,Lengthy,Brief,D,'Concise' means 'Brief'.
+115,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Permanent'.,Stable,Temporary,Lasting,Fixed,B,The opposite of 'Permanent' is 'Temporary'.
+116,Verbal Ability,Sentence Completion,medium,Neither the manager nor the employees ______ present.,were,is,has,was,A,"With 'neither...nor', the verb agrees with the nearer subject 'employees'."
+117,Verbal Ability,Error Spotting,medium,Spot the error: 'Each of the boys were present.',were present,Each of,the boys,no error,A,"'Each' is singular, so 'was present'."
+118,Verbal Ability,Reading Comprehension,hard,Read the passage: 'Automation is reshaping entry level jobs. Employers now value candidates who can learn new tools quickly rather than those who merely memorise procedures.' What do employers value most?,Memorising procedures,Fast learning ability,Longer experience,Higher salary demands,B,The passage states employers value quick learning over memorisation.
+119,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 120, February: 220, March: 140, April: 160. What is the total number of units sold in these four months?",640,660,610,320,A,Total = 120 + 220 + 140 + 160 = 640.
+120,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 45, Tue: 55, Wed: 65, Thu: 65, Fri: 30. What is the average number of visitors per day?",48,57,52,260,C,Average = 260/5 = 52.0.
+121,Data Interpretation,Pie Chart,medium,"In a pie chart of total expenditure Rs.6000, the sector for transport is 108 degrees. What is the expenditure on transport?",1300,2400,1080,1800,D,Expenditure = 6000 x 108/360 = Rs.1800.
+122,Data Interpretation,Bar Graph,medium,A bar graph shows production of 300 units in 2024 and 390 units in 2025. What is the percentage growth?,30%,25%,90%,40%,A,Growth = (390 - 300)/300 x 100 = 30%.
+123,Data Interpretation,Table Analysis,hard,In a survey 150 people preferred tea and 100 preferred coffee. What is the ratio of tea to coffee drinkers?,150:110,2:1,2:3,3:2,D,Ratio = 150:100 = 3:2 after dividing by HCF 50.
+124,Data Interpretation,Pie Chart,easy,"Out of 1500 students surveyed, 200 chose software roles. What percentage chose software roles?",200%,18.33%,13.33%,10.33%,C,Percentage = 200/1500 x 100 = 13.33%.
+125,Quantitative Aptitude,Percentages,easy,What is 18% of 560?,128.8,78.4,201.6,100.8,D,18% of 560 = 560 x 18/100 = 100.8.
+126,Quantitative Aptitude,Percentages,medium,A salary increases from Rs.440 to Rs.484. What is the percentage increase?,15%,9%,10%,5%,C,Increase = 44; % = 44/440 x 100 = 10%.
+127,Quantitative Aptitude,Profit and Loss,easy,An article bought for Rs.750 is sold for Rs.900. Find the profit percent.,30%,16%,20%,25%,C,Profit = 150; Profit% = 150/750 x 100 = 20%.
+128,Quantitative Aptitude,Profit and Loss,hard,A shirt marked at Rs.1200 is sold after two successive discounts of 25% and 5%. Find the selling price.,855,840,895,820,A,SP = 1200 x 75/100 x 95/100 = Rs.855.
+129,Quantitative Aptitude,Time and Work,medium,"A can finish a job in 12 days and B in 30 days. Working together, how many days will they take?",8.57,10.07,7.37,21,A,Together = (12x30)/(12+30) = 60/7 = 8.57 days.
+130,Quantitative Aptitude,Time and Work,medium,"Pipe A fills a tank in 15 hours and pipe B in 60 hours. If both are opened together, in how many hours will the tank be full?",12,14,75,10.5,A,1/15 + 1/60 = (15+60)/900; time = 900/75 = 12.0 hours.
+131,Quantitative Aptitude,Time Speed Distance,easy,A car travels at 60 km/h for 2.5 hours. What distance does it cover?,300 km,210 km,150 km,120 km,C,Distance = speed x time = 60 x 2.5 = 150 km.
+132,Quantitative Aptitude,Time Speed Distance,hard,A train 300 m long runs at 72 km/h. How many seconds does it take to cross a pole?,4.17,18,12.5,15,D,Speed = 72 x 5/18 = 20 m/s; time = 300/20 = 15.0 s.
+133,Quantitative Aptitude,Averages,easy,"Find the average of the numbers 20, 43, 64, 84, 27.",44.6,47.6,50.1,238,B,Sum = 238; average = 238/5 = 47.6.
+134,Quantitative Aptitude,Averages,medium,The average age of 20 students is 49 years. A new student aged 61 joins. What is the new average?,50,51.57,48.07,49.57,D,New average = (20x49 + 61)/21 = 49.57 years.
+135,Quantitative Aptitude,Ratio and Proportion,easy,Rs.150 is divided between two friends in the ratio 3:7. Find the smaller share.,105,45,48,75,B,Smaller share = 150 x 3/10 = Rs.45.
+136,Quantitative Aptitude,Interest,easy,Find the simple interest on Rs.6400 at 6% per annum for 3 years.,1152,1280,1088,2304,A,SI = PRT/100 = 6400 x 6 x 3/100 = Rs.1152.
+137,Quantitative Aptitude,Interest,hard,"Find the compound interest on Rs.5000 at 10% per annum for 2 years, compounded annually.",1000,1005,1110,1050,D,CI = 5000[(1+10/100)^2 - 1] = Rs.1050.
+138,Quantitative Aptitude,Probability,medium,"A bag has 3 red, 6 blue and 2 green balls. One ball is drawn at random. What is the probability that it is red?",3/8,3/11,2/11,6/11,B,P(red) = 3/11 = 3/11.
+139,Quantitative Aptitude,Number System,easy,"Find the next term: 6, 12, 24, 48, ?",96,50,98,48,A,Each term is multiplied by 2; next = 48 x 2 = 96.
+140,Quantitative Aptitude,Number System,medium,Find the LCM of 24 and 48.,24,1152,51,48,D,"LCM = (24x48)/HCF(24,48) = 1152/24 = 48."
+141,Quantitative Aptitude,Ages,medium,The present ages of A and B are in the ratio 2:3 and their total age is 30 years. What will be A's age after 8 years?,26,20,4,22,B,A = 30 x 2/5 = 12; after 8 years = 20.
+142,Quantitative Aptitude,Mixtures,medium,A 50 litre mixture contains milk and water in which milk is 70%. How many litres of water does it contain?,15 L,35 L,20 L,30 L,A,Water% = 30; water = 50 x 30/100 = 15 L.
+143,Logical Reasoning,Number Series,easy,"Complete the series: 4, 10, 16, 22, 28, ?",34,36,40,33,A,Common difference is 6; next term = 28 + 6 = 34.
+144,Logical Reasoning,Number Series,medium,"Find the missing term: 81, 100, 121, 144, ?",174,26,169,156,C,Terms are squares of 9 to 12; next = 13^2 = 169.
+145,Logical Reasoning,Number Series,medium,"What comes next: 4, 8, 12, 20, 32, ?",54,64,49,52,D,Each term is the sum of the previous two; next = 32 + 20 = 52.
+146,Logical Reasoning,Coding Decoding,medium,"If MAP is coded as NBQ, how is TAP coded?",UBQ,VCR,SZO,PAT,A,"Each letter moves 1 step(s) forward, so TAP -> UBQ."
+147,Logical Reasoning,Direction Sense,medium,"A man walks 10 km north, then turns right and walks 12 km. How far is he from the starting point?",15.62 km,17.62 km,22 km,2 km,A,The path forms a right triangle: sqrt(10^2 + 12^2) = 15.62 km.
+148,Logical Reasoning,Seating Arrangement,medium,"Bala, Farid, Deepa, Chitra, Gita sit in a row in that order from left to right. Who is exactly in the middle?",Deepa,Bala,Farid,Chitra,A,"With 5 people, the 3rd from left is the middle person: Deepa."
+149,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 11:30?,180 degrees,155 degrees,165 degrees,330 degrees,C,Angle = |30H - 5.5M| = |30x11 - 5.5x30| = 165 degrees.
+150,Logical Reasoning,Calendars,hard,"If today is Friday, what day will it be after 200 days?",Monday,Tuesday,Wednesday,Friday,B,200 mod 7 = 4; counting 4 day(s) from Friday gives Tuesday.
+151,Logical Reasoning,Analogy,easy,Doctor : Hospital :: Teacher : ?,Exam,Book,Student,School,D,A doctor works in a hospital as a teacher works in a school.
+152,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Vivid'.,Bright,Faint,Plain,Quiet,A,'Vivid' means 'Bright'.
+153,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Obvious'.,Evident,Clear,Plain,Obscure,D,The opposite of 'Obvious' is 'Obscure'.
+154,Verbal Ability,Sentence Completion,medium,We need to ______ the deadline because of the delay.,extend,expose,expend,expand,A,A deadline is extended.
+155,Verbal Ability,Error Spotting,medium,Spot the error: 'Both the sisters are not intelligent.',no error,the sisters,Both,are not,C,'Both' cannot be used with a negative; use 'Neither'.
+156,Verbal Ability,Reading Comprehension,hard,"Read the passage: 'Adaptive testing selects the next question based on the candidate's previous answer, so an accurate estimate of ability is reached with fewer questions.' What is the advantage of adaptive testing?",Fewer questions needed,No scoring required,Longer test duration,Same question for all,A,Adaptive selection reaches an accurate estimate using fewer items.
+157,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 260, February: 180, March: 240, April: 200. What is the total number of units sold in these four months?",900,880,440,850,B,Total = 260 + 180 + 240 + 200 = 880.
+158,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 55, Tue: 30, Wed: 65, Thu: 35, Fri: 50. What is the average number of visitors per day?",47,52,235,43,A,Average = 235/5 = 47.0.
+159,Data Interpretation,Pie Chart,medium,"In a pie chart of total expenditure Rs.4800, the sector for transport is 60 degrees. What is the expenditure on transport?",600,400,1280,800,D,Expenditure = 4800 x 60/360 = Rs.800.
+160,Data Interpretation,Bar Graph,medium,A bar graph shows production of 300 units in 2024 and 360 units in 2025. What is the percentage growth?,30%,20%,60%,15%,B,Growth = (360 - 300)/300 x 100 = 20%.
+161,Data Interpretation,Table Analysis,hard,In a survey 180 people preferred tea and 75 preferred coffee. What is the ratio of tea to coffee drinkers?,5:12,12:5,2:1,180:85,B,Ratio = 180:75 = 12:5 after dividing by HCF 15.
+162,Quantitative Aptitude,Percentages,easy,What is 72% of 680?,489.6,979.2,462.4,523.6,A,72% of 680 = 680 x 72/100 = 489.6.
+163,Quantitative Aptitude,Percentages,medium,A salary increases from Rs.820 to Rs.984. What is the percentage increase?,25%,15%,20%,17%,C,Increase = 164; % = 164/820 x 100 = 20%.
+164,Quantitative Aptitude,Profit and Loss,easy,An article bought for Rs.400 is sold for Rs.460. Find the profit percent.,11%,20%,25%,15%,D,Profit = 60; Profit% = 60/400 x 100 = 15%.
+165,Quantitative Aptitude,Profit and Loss,hard,A shirt marked at Rs.1500 is sold after two successive discounts of 15% and 5%. Find the selling price.,1211.25,1200,1251.25,1176.25,A,SP = 1500 x 85/100 x 95/100 = Rs.1211.25.
+166,Quantitative Aptitude,Time and Work,medium,"A can finish a job in 15 days and B in 36 days. Working together, how many days will they take?",25.5,10.59,9.39,12.09,B,Together = (15x36)/(15+36) = 180/17 = 10.59 days.
+167,Quantitative Aptitude,Time and Work,medium,"Pipe A fills a tank in 20 hours and pipe B in 30 hours. If both are opened together, in how many hours will the tank be full?",10.5,14,50,12,D,1/20 + 1/30 = (20+30)/600; time = 600/50 = 12.0 hours.
+168,Quantitative Aptitude,Time Speed Distance,easy,A car travels at 30 km/h for 4 hours. What distance does it cover?,150 km,240 km,120 km,105 km,C,Distance = speed x time = 30 x 4 = 120 km.
+169,Quantitative Aptitude,Time Speed Distance,hard,A train 250 m long runs at 60 km/h. How many seconds does it take to cross a pole?,12.5,18,15,4.17,C,Speed = 60 x 5/18 = 16.67 m/s; time = 250/16.67 = 15.0 s.
+170,Quantitative Aptitude,Averages,easy,"Find the average of the numbers 71, 47, 68, 81, 26, 13, 71.",53.86,377,50.86,56.36,A,Sum = 377; average = 377/7 = 53.86.
+171,Quantitative Aptitude,Averages,medium,The average age of 10 students is 51 years. A new student aged 62 joins. What is the new average?,50.5,55,54,52,D,New average = (10x51 + 62)/11 = 52.0 years.
+172,Quantitative Aptitude,Ratio and Proportion,easy,Rs.81 is divided between two friends in the ratio 4:5. Find the smaller share.,66,45,40,36,D,Smaller share = 81 x 4/9 = Rs.36.
+173,Quantitative Aptitude,Interest,hard,"Find the compound interest on Rs.10000 at 5% per annum for 2 years, compounded annually.",980,1025,1085,1000,B,CI = 10000[(1+5/100)^2 - 1] = Rs.1025.
+174,Quantitative Aptitude,Probability,medium,"A bag has 3 red, 6 blue and 4 green balls. One ball is drawn at random. What is the probability that it is red?",3/10,3/13,4/13,6/13,B,P(red) = 3/13 = 3/13.
+175,Quantitative Aptitude,Permutation and Combination,medium,In how many ways can the letters of the word SCALE be arranged? (all letters distinct),25,120,60,240,B,5 distinct letters -> 5! = 120 arrangements.
+176,Quantitative Aptitude,Number System,easy,"Find the next term: 7, 14, 28, 56, ?",58,56,114,112,D,Each term is multiplied by 2; next = 56 x 2 = 112.
+177,Quantitative Aptitude,Number System,medium,Find the LCM of 30 and 48.,120,6,1440,240,D,"LCM = (30x48)/HCF(30,48) = 1440/6 = 240."
+178,Quantitative Aptitude,Ages,medium,The present ages of A and B are in the ratio 5:6 and their total age is 55 years. What will be A's age after 8 years?,17,47,38,33,D,A = 55 x 5/11 = 25; after 8 years = 33.
+179,Quantitative Aptitude,Mixtures,medium,A 100 litre mixture contains milk and water in which milk is 80%. How many litres of water does it contain?,80 L,40 L,20 L,25 L,C,Water% = 20; water = 100 x 20/100 = 20 L.
+180,Logical Reasoning,Number Series,easy,"Complete the series: 15, 21, 27, 33, 39, ?",51,44,47,45,D,Common difference is 6; next term = 39 + 6 = 45.
+181,Logical Reasoning,Number Series,medium,"Find the missing term: 25, 36, 49, 64, ?",72,86,81,18,C,Terms are squares of 5 to 8; next = 9^2 = 81.
+182,Logical Reasoning,Number Series,medium,"What comes next: 1, 3, 4, 7, 11, ?",15,22,18,20,C,Each term is the sum of the previous two; next = 11 + 7 = 18.
+183,Logical Reasoning,Coding Decoding,medium,"If MAP is coded as NBQ, how is PIG coded?",QJH,OHF,GIP,RKI,A,"Each letter moves 1 step(s) forward, so PIG -> QJH."
+184,Logical Reasoning,Direction Sense,medium,"A man walks 10 km north, then turns right and walks 4 km. How far is he from the starting point?",14 km,12.77 km,10.77 km,6 km,C,The path forms a right triangle: sqrt(10^2 + 4^2) = 10.77 km.
+185,Logical Reasoning,Seating Arrangement,medium,"Gita, Bala, Eshan, Farid, Deepa sit in a row in that order from left to right. Who is exactly in the middle?",Gita,Eshan,Farid,Bala,B,"With 5 people, the 3rd from left is the middle person: Eshan."
+186,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 6:00?,170 degrees,180 degrees,195 degrees,180 degrees 1,B,Angle = |30H - 5.5M| = |30x6 - 5.5x0| = 180 degrees.
+187,Logical Reasoning,Calendars,hard,"If today is Saturday, what day will it be after 61 days?",Saturday,Thursday,Friday,Wednesday,B,61 mod 7 = 5; counting 5 day(s) from Saturday gives Thursday.
+188,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Benevolent'.,Cruel,Timid,Greedy,Kind,D,'Benevolent' means 'Kind'.
+189,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Dense'.,Thick,Solid,Heavy,Sparse,D,The opposite of 'Dense' is 'Sparse'.
+190,Verbal Ability,Sentence Completion,medium,His explanation was so ______ that nobody understood it.,amicable,ambitious,amiable,ambiguous,D,'Ambiguous' means open to more than one interpretation.
+191,Verbal Ability,Error Spotting,medium,Spot the error: 'The furnitures are new.',no error,new,The furnitures,are,C,'Furniture' is an uncountable noun and has no plural.
+192,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 240, February: 220, March: 120, April: 120. What is the total number of units sold in these four months?",670,720,700,350,C,Total = 240 + 220 + 120 + 120 = 700.
+193,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 60, Tue: 50, Wed: 45, Thu: 65, Fri: 65. What is the average number of visitors per day?",57,62,285,53,A,Average = 285/5 = 57.0.
+194,Data Interpretation,Pie Chart,medium,"In a pie chart of total expenditure Rs.7200, the sector for transport is 60 degrees. What is the expenditure on transport?",600,1200,1203,1920,B,Expenditure = 7200 x 60/360 = Rs.1200.
+195,Data Interpretation,Bar Graph,medium,A bar graph shows production of 200 units in 2024 and 220 units in 2025. What is the percentage growth?,5%,20%,10% 1,10%,D,Growth = (220 - 200)/200 x 100 = 10%.
+196,Data Interpretation,Table Analysis,hard,In a survey 200 people preferred tea and 80 preferred coffee. What is the ratio of tea to coffee drinkers?,200:90,2:5,5:2,2:1,C,Ratio = 200:80 = 5:2 after dividing by HCF 40.
+197,Data Interpretation,Pie Chart,easy,"Out of 1500 students surveyed, 240 chose software roles. What percentage chose software roles?",13%,240%,21%,16%,D,Percentage = 240/1500 x 100 = 16%.
+198,Quantitative Aptitude,Percentages,medium,A salary increases from Rs.890 to Rs.979. What is the percentage increase?,9%,5%,10%,15%,C,Increase = 89; % = 89/890 x 100 = 10%.
+199,Quantitative Aptitude,Profit and Loss,easy,An article bought for Rs.900 is sold for Rs.990. Find the profit percent.,10%,20%,15%,6%,A,Profit = 90; Profit% = 90/900 x 100 = 10%.
+200,Quantitative Aptitude,Profit and Loss,hard,A shirt marked at Rs.1000 is sold after two successive discounts of 20% and 12%. Find the selling price.,744,680,704,669,C,SP = 1000 x 80/100 x 88/100 = Rs.704.
+201,Quantitative Aptitude,Time and Work,medium,"A can finish a job in 10 days and B in 12 days. Working together, how many days will they take?",5.45,11,6.95,4.25,A,Together = (10x12)/(10+12) = 60/11 = 5.45 days.
+202,Quantitative Aptitude,Time and Work,medium,"Pipe A fills a tank in 24 hours and pipe B in 40 hours. If both are opened together, in how many hours will the tank be full?",13.5,15,17,64,B,1/24 + 1/40 = (24+40)/960; time = 960/64 = 15.0 hours.
+203,Quantitative Aptitude,Time Speed Distance,easy,A car travels at 40 km/h for 6 hours. What distance does it cover?,220 km,480 km,280 km,240 km,D,Distance = speed x time = 40 x 6 = 240 km.
+204,Quantitative Aptitude,Time Speed Distance,hard,A train 150 m long runs at 45 km/h. How many seconds does it take to cross a pole?,9.5,3.33,15,12,D,Speed = 45 x 5/18 = 12.5 m/s; time = 150/12.5 = 12.0 s.
+205,Quantitative Aptitude,Averages,easy,"Find the average of the numbers 69, 65, 71, 29, 96, 27, 39, 29.",50.12,425,55.62,53.12,D,Sum = 425; average = 425/8 = 53.12.
+206,Quantitative Aptitude,Averages,medium,The average age of 12 students is 30 years. A new student aged 68 joins. What is the new average?,34.92,31,31.42,32.92,D,New average = (12x30 + 68)/13 = 32.92 years.
+207,Quantitative Aptitude,Ratio and Proportion,easy,Rs.128 is divided between two friends in the ratio 7:9. Find the smaller share.,64,72,86,56,D,Smaller share = 128 x 7/16 = Rs.56.
+208,Quantitative Aptitude,Interest,easy,Find the simple interest on Rs.2000 at 8% per annum for 5 years.,840,1600,780,800,D,SI = PRT/100 = 2000 x 8 x 5/100 = Rs.800.
+209,Quantitative Aptitude,Interest,hard,"Find the compound interest on Rs.4000 at 10% per annum for 2 years, compounded annually.",900,840,800,795,B,CI = 4000[(1+10/100)^2 - 1] = Rs.840.
+210,Quantitative Aptitude,Probability,medium,"A bag has 4 red, 3 blue and 3 green balls. One ball is drawn at random. What is the probability that it is red?",3/10,2/5 1,4/6,2/5,D,P(red) = 4/10 = 2/5.
+211,Quantitative Aptitude,Permutation and Combination,medium,In how many ways can the letters of the word TRACK be arranged? (all letters distinct),120,60,25,240,A,5 distinct letters -> 5! = 120 arrangements.
+212,Quantitative Aptitude,Number System,medium,Find the LCM of 36 and 48.,144,1728,12,72,A,"LCM = (36x48)/HCF(36,48) = 1728/12 = 144."
+213,Quantitative Aptitude,Ages,medium,The present ages of A and B are in the ratio 4:7 and their total age is 66 years. What will be A's age after 5 years?,47,61,29,19,C,A = 66 x 4/11 = 24; after 5 years = 29.
+214,Quantitative Aptitude,Mixtures,medium,A 100 litre mixture contains milk and water in which milk is 70%. How many litres of water does it contain?,70 L,60 L,35 L,30 L,D,Water% = 30; water = 100 x 30/100 = 30 L.
+215,Logical Reasoning,Number Series,easy,"Complete the series: 9, 16, 23, 30, 37, ?",46,51,43,44,D,Common difference is 7; next term = 37 + 7 = 44.
+216,Logical Reasoning,Number Series,medium,"What comes next: 3, 9, 12, 21, 33, ?",54,66,51,56,A,Each term is the sum of the previous two; next = 33 + 21 = 54.
+217,Logical Reasoning,Coding Decoding,medium,"If CAT is coded as DBU, how is NET coded?",OFU,TEN,MDS,PGV,A,"Each letter moves 1 step(s) forward, so NET -> OFU."
+218,Logical Reasoning,Blood Relations,medium,M is the daughter of N. N is the son of O. How is O related to M?,Father,Uncle,Brother,Grandfather,D,"N is M's father and O is N's father, so O is M's grandfather."
+219,Logical Reasoning,Direction Sense,medium,"A man walks 6 km north, then turns right and walks 12 km. How far is he from the starting point?",13.42 km,18 km,6 km,15.42 km,A,The path forms a right triangle: sqrt(6^2 + 12^2) = 13.42 km.
+220,Logical Reasoning,Odd One Out,easy,"Choose the odd one out: 121, 144, 169, 180.",121,180,169,144,B,All others are perfect squares.
+221,Logical Reasoning,Syllogism,hard,Statements: No student is lazy. Ram is a student. Conclusion?,Some students are lazy,Ram is lazy,Ram is not lazy,Ram is a teacher,C,Ram belongs to a class that excludes laziness.
+222,Logical Reasoning,Seating Arrangement,medium,"Amit, Deepa, Eshan, Farid, Gita sit in a row in that order from left to right. Who is exactly in the middle?",Deepa,Farid,Eshan,Amit,C,"With 5 people, the 3rd from left is the middle person: Eshan."
+223,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 3:40?,120 degrees,145 degrees,130 degrees,90 degrees,C,Angle = |30H - 5.5M| = |30x3 - 5.5x40| = 130 degrees.
+224,Logical Reasoning,Calendars,hard,"If today is Friday, what day will it be after 123 days?",Friday,Wednesday,Monday,Tuesday,D,123 mod 7 = 4; counting 4 day(s) from Friday gives Tuesday.
+225,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Candid'.,Lazy,Secretive,Rude,Frank,D,'Candid' means 'Frank'.
+226,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Accelerate'.,Speed,Hasten,Decelerate,Rush,C,The opposite of 'Accelerate' is 'Decelerate'.
+227,Verbal Ability,Sentence Completion,medium,"If I ______ you, I would accept the offer.",will be,were,was,am,B,Second conditional uses 'were' for all persons.
+228,Verbal Ability,Error Spotting,medium,Spot the error: 'One of my friend is a doctor.',a doctor,my friend,is,One of,B,'One of' is followed by a plural noun: 'one of my friends'.
+229,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 200, February: 120, March: 180, April: 140. What is the total number of units sold in these four months?",640,610,660,320,A,Total = 200 + 120 + 180 + 140 = 640.
+230,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 55, Tue: 40, Wed: 40, Thu: 50, Fri: 65. What is the average number of visitors per day?",250,55,46,50,D,Average = 250/5 = 50.0.
+231,Data Interpretation,Pie Chart,medium,"In a pie chart of total expenditure Rs.6000, the sector for transport is 60 degrees. What is the expenditure on transport?",1600,500,1000,600,C,Expenditure = 6000 x 60/360 = Rs.1000.
+232,Data Interpretation,Bar Graph,medium,A bar graph shows production of 250 units in 2024 and 312 units in 2025. What is the percentage growth?,35%,20%,62%,25%,D,Growth = (312 - 250)/250 x 100 = 25%.
+233,Data Interpretation,Table Analysis,hard,In a survey 300 people preferred tea and 100 preferred coffee. What is the ratio of tea to coffee drinkers?,3:1,2:1,300:110,1:3,A,Ratio = 300:100 = 3:1 after dividing by HCF 100.
+234,Quantitative Aptitude,Percentages,easy,What is 45% of 840?,378,420,756,344.4,A,45% of 840 = 840 x 45/100 = 378.
+235,Quantitative Aptitude,Percentages,medium,A salary increases from Rs.690 to Rs.759. What is the percentage increase?,15%,10%,5%,9%,B,Increase = 69; % = 69/690 x 100 = 10%.
+236,Quantitative Aptitude,Profit and Loss,easy,An article bought for Rs.480 is sold for Rs.528. Find the profit percent.,10%,6%,15%,20%,A,Profit = 48; Profit% = 48/480 x 100 = 10%.
+237,Quantitative Aptitude,Profit and Loss,hard,A shirt marked at Rs.1800 is sold after two successive discounts of 25% and 10%. Find the selling price.,1170,1215,1255,1180,B,SP = 1800 x 75/100 x 90/100 = Rs.1215.
+238,Quantitative Aptitude,Time and Work,medium,"A can finish a job in 9 days and B in 30 days. Working together, how many days will they take?",19.5,5.72,8.42,6.92,D,Together = (9x30)/(9+30) = 90/13 = 6.92 days.
+239,Quantitative Aptitude,Time and Work,medium,"Pipe A fills a tank in 20 hours and pipe B in 60 hours. If both are opened together, in how many hours will the tank be full?",17,15,13.5,80,B,1/20 + 1/60 = (20+60)/1200; time = 1200/80 = 15.0 hours.
+240,Quantitative Aptitude,Time Speed Distance,easy,A car travels at 50 km/h for 2 hours. What distance does it cover?,150 km,100 km,200 km,75 km,B,Distance = speed x time = 50 x 2 = 100 km.
+241,Quantitative Aptitude,Time Speed Distance,hard,A train 200 m long runs at 36 km/h. How many seconds does it take to cross a pole?,17.5,23,20,5.56,C,Speed = 36 x 5/18 = 10 m/s; time = 200/10 = 20.0 s.
+242,Quantitative Aptitude,Averages,easy,"Find the average of the numbers 62, 24, 50, 46, 65, 27, 38, 96.",53.5,48,408,51,D,Sum = 408; average = 408/8 = 51.0.
+243,Quantitative Aptitude,Averages,medium,The average age of 10 students is 48 years. A new student aged 79 joins. What is the new average?,49,49.32,50.82,52.82,C,New average = (10x48 + 79)/11 = 50.82 years.
+244,Quantitative Aptitude,Ratio and Proportion,easy,Rs.117 is divided between two friends in the ratio 5:8. Find the smaller share.,75,72,58,45,D,Smaller share = 117 x 5/13 = Rs.45.
+245,Quantitative Aptitude,Interest,easy,Find the simple interest on Rs.2000 at 10% per annum for 3 years.,640,580,1200,600,D,SI = PRT/100 = 2000 x 10 x 3/100 = Rs.600.
+246,Quantitative Aptitude,Probability,medium,"A bag has 4 red, 8 blue and 6 green balls. One ball is drawn at random. What is the probability that it is red?",8/18,2/9,6/18,4/14,B,P(red) = 4/18 = 2/9.
+247,Quantitative Aptitude,Number System,easy,"Find the next term: 5, 10, 20, 40, ?",80,40,82,42,A,Each term is multiplied by 2; next = 40 x 2 = 80.
+248,Quantitative Aptitude,Number System,medium,Find the LCM of 36 and 40.,180,360,4,1440,B,"LCM = (36x40)/HCF(36,40) = 1440/4 = 360."
+249,Quantitative Aptitude,Ages,medium,The present ages of A and B are in the ratio 4:7 and their total age is 66 years. What will be A's age after 4 years?,62,46,28,20,C,A = 66 x 4/11 = 24; after 4 years = 28.
+250,Logical Reasoning,Number Series,easy,"Complete the series: 8, 18, 28, 38, 48, ?",57,60,68,58,D,Common difference is 10; next term = 48 + 10 = 58.
+251,Logical Reasoning,Coding Decoding,medium,"If MAP is coded as NBQ, how is HUB coded?",JWD,IVC,GTA,BUH,B,"Each letter moves 1 step(s) forward, so HUB -> IVC."
+252,Logical Reasoning,Direction Sense,medium,"A man walks 6 km north, then turns right and walks 8 km. How far is he from the starting point?",14 km,12 km,10 km,2 km,C,The path forms a right triangle: sqrt(6^2 + 8^2) = 10 km.
+253,Logical Reasoning,Seating Arrangement,medium,"Bala, Amit, Deepa, Chitra, Farid sit in a row in that order from left to right. Who is exactly in the middle?",Bala,Chitra,Deepa,Amit,C,"With 5 people, the 3rd from left is the middle person: Deepa."
+254,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 5:30?,150 degrees,15 degrees,30 degrees,5 degrees,B,Angle = |30H - 5.5M| = |30x5 - 5.5x30| = 15 degrees.
+255,Logical Reasoning,Calendars,hard,"If today is Friday, what day will it be after 100 days?",Sunday,Saturday,Friday,Monday,A,100 mod 7 = 2; counting 2 day(s) from Friday gives Sunday.
+256,Logical Reasoning,Analogy,easy,Cold : Ice :: Hot : ?,Water,Sun,Fire,Steam,C,Each quality is matched with a typical source.
+257,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Meticulous'.,Rough,Bold,Hasty,Careful,D,'Meticulous' means 'Careful'.
+258,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Wealthy'.,Impoverished,Affluent,Prosperous,Rich,A,The opposite of 'Wealthy' is 'Impoverished'.
+259,Verbal Ability,Sentence Completion,medium,Very few people ______ the courage to speak the truth.,have,has,having,had been,A,"'Few people' is plural, so 'have'."
+260,Verbal Ability,Error Spotting,medium,Spot the error: 'He discussed about the problem.',discussed about,no error,the problem,He,A,'Discuss' is not followed by 'about'.
+261,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 260, February: 240, March: 260, April: 140. What is the total number of units sold in these four months?",900,870,920,450,A,Total = 260 + 240 + 260 + 140 = 900.
+262,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 50, Tue: 65, Wed: 35, Thu: 50, Fri: 55. What is the average number of visitors per day?",56,255,47,51,D,Average = 255/5 = 51.0.
+263,Data Interpretation,Pie Chart,medium,"In a pie chart of total expenditure Rs.6000, the sector for transport is 90 degrees. What is the expenditure on transport?",1000,900,2100,1500,D,Expenditure = 6000 x 90/360 = Rs.1500.
+264,Data Interpretation,Bar Graph,medium,A bar graph shows production of 200 units in 2024 and 240 units in 2025. What is the percentage growth?,40%,15%,20%,30%,C,Growth = (240 - 200)/200 x 100 = 20%.
+265,Data Interpretation,Table Analysis,hard,In a survey 240 people preferred tea and 100 preferred coffee. What is the ratio of tea to coffee drinkers?,12:5,2:1,5:12,240:110,A,Ratio = 240:100 = 12:5 after dividing by HCF 20.
+266,Data Interpretation,Pie Chart,easy,"Out of 1000 students surveyed, 100 chose software roles. What percentage chose software roles?",7%,10%,100%,15%,B,Percentage = 100/1000 x 100 = 10%.
+267,Quantitative Aptitude,Percentages,easy,What is 24% of 320?,92.8,153.6,64,76.8,D,24% of 320 = 320 x 24/100 = 76.8.
+268,Quantitative Aptitude,Percentages,medium,A salary increases from Rs.850 to Rs.1020. What is the percentage increase?,20%,17%,15%,25%,A,Increase = 170; % = 170/850 x 100 = 20%.
+269,Quantitative Aptitude,Profit and Loss,hard,A shirt marked at Rs.2400 is sold after two successive discounts of 15% and 5%. Find the selling price.,1920,1978,1903,1938,D,SP = 2400 x 85/100 x 95/100 = Rs.1938.
+270,Quantitative Aptitude,Time and Work,medium,"A can finish a job in 6 days and B in 14 days. Working together, how many days will they take?",5.7,10,4.2,3,C,Together = (6x14)/(6+14) = 21/5 = 4.2 days.
+271,Quantitative Aptitude,Time and Work,medium,"Pipe A fills a tank in 20 hours and pipe B in 40 hours. If both are opened together, in how many hours will the tank be full?",13.33,60,15.33,11.83,A,1/20 + 1/40 = (20+40)/800; time = 800/60 = 13.33 hours.
+272,Quantitative Aptitude,Time Speed Distance,easy,A car travels at 90 km/h for 6 hours. What distance does it cover?,540 km,1080 km,630 km,495 km,A,Distance = speed x time = 90 x 6 = 540 km.
+273,Quantitative Aptitude,Time Speed Distance,hard,A train 150 m long runs at 54 km/h. How many seconds does it take to cross a pole?,2.78,7.5,10,13,C,Speed = 54 x 5/18 = 15 m/s; time = 150/15 = 10.0 s.
+274,Quantitative Aptitude,Averages,easy,"Find the average of the numbers 87, 94, 43, 40, 74, 40, 99.",70.64,65.14,68.14,477,C,Sum = 477; average = 477/7 = 68.14.
+275,Quantitative Aptitude,Averages,medium,The average age of 15 students is 36 years. A new student aged 77 joins. What is the new average?,38.56,37,40.56,37.06,A,New average = (15x36 + 77)/16 = 38.56 years.
+276,Quantitative Aptitude,Ratio and Proportion,easy,Rs.144 is divided between two friends in the ratio 7:9. Find the smaller share.,72,81,63,93,C,Smaller share = 144 x 7/16 = Rs.63.
+277,Quantitative Aptitude,Interest,easy,Find the simple interest on Rs.2500 at 6% per annum for 4 years.,575,600,1200,650,B,SI = PRT/100 = 2500 x 6 x 4/100 = Rs.600.
+278,Quantitative Aptitude,Interest,hard,"Find the compound interest on Rs.12500 at 8% per annum for 2 years, compounded annually.",2080,2140,2035,2000,A,CI = 12500[(1+8/100)^2 - 1] = Rs.2080.
+279,Quantitative Aptitude,Probability,medium,"A bag has 8 red, 7 blue and 4 green balls. One ball is drawn at random. What is the probability that it is red?",8/11,8/19,4/19,7/19,B,P(red) = 8/19 = 8/19.
+280,Quantitative Aptitude,Permutation and Combination,medium,In how many ways can the letters of the word SMART be arranged? (all letters distinct),25,60,240,120,D,5 distinct letters -> 5! = 120 arrangements.
+281,Quantitative Aptitude,Number System,easy,"Find the next term: 5, 15, 45, 135, ?",405,138,270,408,A,Each term is multiplied by 3; next = 135 x 3 = 405.
+282,Quantitative Aptitude,Ages,medium,The present ages of A and B are in the ratio 5:6 and their total age is 77 years. What will be A's age after 4 years?,39,73,31,46,A,A = 77 x 5/11 = 35; after 4 years = 39.
+283,Logical Reasoning,Number Series,easy,"Complete the series: 14, 25, 36, 47, 58, ?",69,71,68,80,A,Common difference is 11; next term = 58 + 11 = 69.
+284,Logical Reasoning,Number Series,medium,"Find the missing term: 36, 49, 64, 81, ?",20,105,90,100,D,Terms are squares of 6 to 9; next = 10^2 = 100.
+285,Logical Reasoning,Coding Decoding,medium,"If LOG is coded as NQI, how is NET coded?",TEN,LCR,PGV,QHW,C,"Each letter moves 2 step(s) forward, so NET -> PGV."
+286,Logical Reasoning,Odd One Out,easy,"Choose the odd one out: Python, Java, Linux, C++.",Linux,Java,Python,C++,A,Linux is an operating system; others are programming languages.
+287,Logical Reasoning,Seating Arrangement,medium,"Bala, Deepa, Amit, Chitra, Farid sit in a row in that order from left to right. Who is exactly in the middle?",Deepa,Chitra,Bala,Amit,D,"With 5 people, the 3rd from left is the middle person: Amit."
+288,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 7:40?,210 degrees,25 degrees,0 degrees,10 degrees,D,Angle = |30H - 5.5M| = |30x7 - 5.5x40| = 10 degrees.
+289,Logical Reasoning,Calendars,hard,"If today is Saturday, what day will it be after 15 days?",Monday,Saturday,Sunday 1,Sunday,D,15 mod 7 = 1; counting 1 day(s) from Saturday gives Sunday.
+290,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Prudent'.,Reckless,Loud,Sensible,Kind,C,'Prudent' means 'Sensible'.
+291,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Optimist'.,Dreamer,Pessimist,Realist,Thinker,B,The opposite of 'Optimist' is 'Pessimist'.
+292,Verbal Ability,Sentence Completion,medium,She was praised for her ______ handling of the crisis.,efficacy,efficiently,efficient,efficiency,C,An adjective is needed before the noun 'handling'.
+293,Verbal Ability,Error Spotting,medium,Spot the error: 'He is senior than me.',senior than,me,no error,He is,A,"'Senior' takes 'to', not 'than'."
+294,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 160, February: 220, March: 200, April: 200. What is the total number of units sold in these four months?",750,780,800,390,B,Total = 160 + 220 + 200 + 200 = 780.
+295,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 55, Tue: 50, Wed: 35, Thu: 65, Fri: 35. What is the average number of visitors per day?",48,240,44,53,A,Average = 240/5 = 48.0.
+296,Data Interpretation,Pie Chart,medium,"In a pie chart of total expenditure Rs.4800, the sector for transport is 72 degrees. What is the expenditure on transport?",1440,960,720,560,B,Expenditure = 4800 x 72/360 = Rs.960.
+297,Data Interpretation,Bar Graph,medium,A bar graph shows production of 400 units in 2024 and 440 units in 2025. What is the percentage growth?,20%,5%,40%,10%,D,Growth = (440 - 400)/400 x 100 = 10%.
+298,Data Interpretation,Table Analysis,hard,In a survey 300 people preferred tea and 75 preferred coffee. What is the ratio of tea to coffee drinkers?,300:85,4:1,2:1,1:4,B,Ratio = 300:75 = 4:1 after dividing by HCF 75.
+299,Data Interpretation,Pie Chart,easy,"Out of 1200 students surveyed, 100 chose software roles. What percentage chose software roles?",13.33%,100%,5.33%,8.33%,D,Percentage = 100/1200 x 100 = 8.33%.
+300,Quantitative Aptitude,Percentages,easy,What is 72% of 1600?,2304,1088,1232,1152,D,72% of 1600 = 1600 x 72/100 = 1152.
+301,Quantitative Aptitude,Percentages,medium,A salary increases from Rs.520 to Rs.728. What is the percentage increase?,29%,40%,35%,45%,B,Increase = 208; % = 208/520 x 100 = 40%.
+302,Quantitative Aptitude,Profit and Loss,easy,An article bought for Rs.400 is sold for Rs.440. Find the profit percent.,6%,10%,15%,20%,B,Profit = 40; Profit% = 40/400 x 100 = 10%.
+303,Quantitative Aptitude,Profit and Loss,hard,A shirt marked at Rs.1800 is sold after two successive discounts of 15% and 10%. Find the selling price.,1350,1377,1342,1417,B,SP = 1800 x 85/100 x 90/100 = Rs.1377.
+304,Quantitative Aptitude,Time and Work,medium,"A can finish a job in 6 days and B in 30 days. Working together, how many days will they take?",5,18,6.5,3.8,A,Together = (6x30)/(6+30) = 5/1 = 5.0 days.
+305,Quantitative Aptitude,Time and Work,medium,"Pipe A fills a tank in 12 hours and pipe B in 40 hours. If both are opened together, in how many hours will the tank be full?",52,9.23,7.73,11.23,B,1/12 + 1/40 = (12+40)/480; time = 480/52 = 9.23 hours.
+306,Quantitative Aptitude,Time Speed Distance,easy,A car travels at 50 km/h for 4 hours. What distance does it cover?,250 km,200 km,400 km,175 km,B,Distance = speed x time = 50 x 4 = 200 km.
+307,Quantitative Aptitude,Time Speed Distance,hard,A train 120 m long runs at 54 km/h. How many seconds does it take to cross a pole?,11,5.5,8,2.22,C,Speed = 54 x 5/18 = 15 m/s; time = 120/15 = 8.0 s.
+308,Quantitative Aptitude,Averages,easy,"Find the average of the numbers 33, 51, 91, 79, 76.",330,63,68.5,66,D,Sum = 330; average = 330/5 = 66.0.
+309,Logical Reasoning,Number Series,easy,"Complete the series: 12, 18, 24, 30, 36, ?",42,41,48,44,A,Common difference is 6; next term = 36 + 6 = 42.
+310,Logical Reasoning,Number Series,medium,"What comes next: 3, 8, 11, 19, 30, ?",51,49,46,60,B,Each term is the sum of the previous two; next = 30 + 19 = 49.
+311,Logical Reasoning,Coding Decoding,medium,"If FAN is coded as JER, how is LID coded?",HEZ,QNI,PMH,DIL,C,"Each letter moves 4 step(s) forward, so LID -> PMH."
+312,Logical Reasoning,Direction Sense,medium,"A man walks 8 km north, then turns right and walks 12 km. How far is he from the starting point?",14.42 km,16.42 km,20 km,4 km,A,The path forms a right triangle: sqrt(8^2 + 12^2) = 14.42 km.
+313,Logical Reasoning,Seating Arrangement,medium,"Farid, Chitra, Deepa, Eshan, Amit sit in a row in that order from left to right. Who is exactly in the middle?",Farid,Deepa,Chitra,Eshan,B,"With 5 people, the 3rd from left is the middle person: Deepa."
+314,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 8:40?,20 degrees,10 degrees,240 degrees,35 degrees,A,Angle = |30H - 5.5M| = |30x8 - 5.5x40| = 20 degrees.
+315,Logical Reasoning,Calendars,hard,"If today is Sunday, what day will it be after 23 days?",Monday,Wednesday,Tuesday,Sunday,C,23 mod 7 = 2; counting 2 day(s) from Sunday gives Tuesday.
+316,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Gregarious'.,Honest,Shy,Sociable,Angry,C,'Gregarious' means 'Sociable'.
+317,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Expand'.,Widen,Stretch,Contract,Grow,C,The opposite of 'Expand' is 'Contract'.
+318,Verbal Ability,Sentence Completion,medium,He apologised ______ his rude behaviour.,for,with,on,of,A,'Apologise for' something.
+319,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 220, February: 180, March: 200, April: 160. What is the total number of units sold in these four months?",380,730,780,760,D,Total = 220 + 180 + 200 + 160 = 760.
+320,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 60, Tue: 50, Wed: 55, Thu: 65, Fri: 55. What is the average number of visitors per day?",53,62,57,285,C,Average = 285/5 = 57.0.
+321,Data Interpretation,Pie Chart,medium,"In a pie chart of total expenditure Rs.6000, the sector for transport is 120 degrees. What is the expenditure on transport?",1500,2000,2600,1200,B,Expenditure = 6000 x 120/360 = Rs.2000.
+322,Data Interpretation,Bar Graph,medium,A bar graph shows production of 500 units in 2024 and 600 units in 2025. What is the percentage growth?,100%,30%,20%,15%,C,Growth = (600 - 500)/500 x 100 = 20%.
+323,Data Interpretation,Table Analysis,hard,In a survey 200 people preferred tea and 120 preferred coffee. What is the ratio of tea to coffee drinkers?,3:5,2:1,5:3,200:130,C,Ratio = 200:120 = 5:3 after dividing by HCF 40.
+324,Logical Reasoning,Number Series,easy,"Complete the series: 6, 12, 18, 24, 30, ?",36,42,35,38,A,Common difference is 6; next term = 30 + 6 = 36.
+325,Logical Reasoning,Number Series,medium,"Find the missing term: 4, 9, 16, 25, ?",41,36,12,30,B,Terms are squares of 2 to 5; next = 6^2 = 36.
+326,Logical Reasoning,Number Series,medium,"What comes next: 5, 7, 12, 19, 31, ?",47,62,50,52,C,Each term is the sum of the previous two; next = 31 + 19 = 50.
+327,Logical Reasoning,Coding Decoding,medium,"If KEY is coded as NHB, how is RAT coded?",UDW,OXQ,TAR,VEX,A,"Each letter moves 3 step(s) forward, so RAT -> UDW."
+328,Logical Reasoning,Direction Sense,medium,"A man walks 8 km north, then turns right and walks 4 km. How far is he from the starting point?",12 km,10.94 km,4 km,8.94 km,D,The path forms a right triangle: sqrt(8^2 + 4^2) = 8.94 km.
+329,Logical Reasoning,Seating Arrangement,medium,"Amit, Chitra, Bala, Gita, Eshan sit in a row in that order from left to right. Who is exactly in the middle?",Bala,Chitra,Amit,Gita,A,"With 5 people, the 3rd from left is the middle person: Bala."
+330,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 9:00?,270 degrees,105 degrees,80 degrees,90 degrees,D,Angle = |30H - 5.5M| = |30x9 - 5.5x0| = 90 degrees.
+331,Logical Reasoning,Calendars,hard,"If today is Sunday, what day will it be after 15 days?",Sunday,Tuesday,Monday,Monday 1,C,15 mod 7 = 1; counting 1 day(s) from Sunday gives Monday.
+332,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Adept'.,Skilled,Rigid,Clumsy,New,A,'Adept' means 'Skilled'.
+333,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Victory'.,Triumph,Success,Win,Defeat,D,The opposite of 'Victory' is 'Defeat'.
+334,Verbal Ability,Sentence Completion,medium,The report is due ______ Monday morning.,by,in,till,since,A,'By' expresses a deadline.
+335,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 160, February: 180, March: 180, April: 160. What is the total number of units sold in these four months?",700,680,340,650,B,Total = 160 + 180 + 180 + 160 = 680.
+336,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 65, Tue: 35, Wed: 65, Thu: 40, Fri: 65. What is the average number of visitors per day?",50,59,270,54,D,Average = 270/5 = 54.0.
+337,Data Interpretation,Pie Chart,medium,"In a pie chart of total expenditure Rs.9000, the sector for transport is 144 degrees. What is the expenditure on transport?",4500,3600,1440,2850,B,Expenditure = 9000 x 144/360 = Rs.3600.
+338,Data Interpretation,Bar Graph,medium,A bar graph shows production of 250 units in 2024 and 275 units in 2025. What is the percentage growth?,5%,20%,25%,10%,D,Growth = (275 - 250)/250 x 100 = 10%.
+339,Data Interpretation,Pie Chart,easy,"Out of 1000 students surveyed, 300 chose software roles. What percentage chose software roles?",30%,35%,300%,27%,A,Percentage = 300/1000 x 100 = 30%.
+340,Logical Reasoning,Number Series,easy,"Complete the series: 5, 15, 25, 35, 45, ?",55,54,65,57,A,Common difference is 10; next term = 45 + 10 = 55.
+341,Logical Reasoning,Number Series,medium,"What comes next: 3, 2, 5, 7, 12, ?",16,21,24,19,D,Each term is the sum of the previous two; next = 12 + 7 = 19.
+342,Logical Reasoning,Coding Decoding,medium,"If DOG is coded as GRJ, how is NET coded?",KBQ,TEN,QHW,RIX,C,"Each letter moves 3 step(s) forward, so NET -> QHW."
+343,Logical Reasoning,Blood Relations,medium,G's mother is the only daughter of H. How is H related to G?,Brother,Father,Maternal grandfather,Uncle,C,H is the father of G's mother.
+344,Logical Reasoning,Direction Sense,medium,"A man walks 5 km north, then turns right and walks 4 km. How far is he from the starting point?",9 km,8.4 km,1 km,6.4 km,D,The path forms a right triangle: sqrt(5^2 + 4^2) = 6.4 km.
+345,Logical Reasoning,Seating Arrangement,medium,"Deepa, Gita, Farid, Amit, Chitra sit in a row in that order from left to right. Who is exactly in the middle?",Deepa,Farid,Gita,Amit,B,"With 5 people, the 3rd from left is the middle person: Farid."
+346,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 2:40?,160 degrees,60 degrees,175 degrees,150 degrees,A,Angle = |30H - 5.5M| = |30x2 - 5.5x40| = 160 degrees.
+347,Logical Reasoning,Calendars,hard,"If today is Monday, what day will it be after 23 days?",Thursday,Monday,Tuesday,Wednesday,D,23 mod 7 = 2; counting 2 day(s) from Monday gives Wednesday.
+348,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Zealous'.,Indifferent,Enthusiastic,Cruel,Tired,B,'Zealous' means 'Enthusiastic'.
+349,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Transparent'.,Opaque,Clear,Glassy,Plain,A,The opposite of 'Transparent' is 'Opaque'.
+350,Verbal Ability,Sentence Completion,medium,She spoke ______ than her colleague.,most fluently,fluently,fluent,more fluently,D,A comparative adverb is required with 'than'.
+351,Data Interpretation,Table Analysis,easy,"Units sold by a store - January: 240, February: 140, March: 220, April: 140. What is the total number of units sold in these four months?",740,710,370,760,A,Total = 240 + 140 + 220 + 140 = 740.
+352,Data Interpretation,Table Analysis,medium,"Visitors to a library - Mon: 40, Tue: 45, Wed: 60, Thu: 30, Fri: 50. What is the average number of visitors per day?",41,50,225,45,D,Average = 225/5 = 45.0.
+353,Data Interpretation,Bar Graph,medium,A bar graph shows production of 400 units in 2024 and 600 units in 2025. What is the percentage growth?,50%,45%,200%,60%,A,Growth = (600 - 400)/400 x 100 = 50%.
+354,Data Interpretation,Table Analysis,hard,In a survey 300 people preferred tea and 60 preferred coffee. What is the ratio of tea to coffee drinkers?,2:1,1:5,5:1,300:70,C,Ratio = 300:60 = 5:1 after dividing by HCF 60.
+355,Logical Reasoning,Number Series,easy,"Complete the series: 12, 22, 32, 42, 52, ?",64,62,61,72,B,Common difference is 10; next term = 52 + 10 = 62.
+356,Logical Reasoning,Number Series,medium,"Find the missing term: 64, 81, 100, 121, ?",149,132,144,24,C,Terms are squares of 8 to 11; next = 12^2 = 144.
+357,Logical Reasoning,Number Series,medium,"What comes next: 6, 8, 14, 22, 36, ?",60,55,58,72,C,Each term is the sum of the previous two; next = 36 + 22 = 58.
+358,Logical Reasoning,Coding Decoding,medium,"If MAP is coded as QET, how is VAN coded?",NAV,RWJ,ZER,AFS,C,"Each letter moves 4 step(s) forward, so VAN -> ZER."
+359,Logical Reasoning,Direction Sense,medium,"A man walks 4 km north, then turns right and walks 12 km. How far is he from the starting point?",16 km,14.65 km,12.65 km,8 km,C,The path forms a right triangle: sqrt(4^2 + 12^2) = 12.65 km.
+360,Logical Reasoning,Odd One Out,easy,"Choose the odd one out: 8, 27, 64, 70.",64,70,27,8,B,All others are perfect cubes.
+361,Logical Reasoning,Seating Arrangement,medium,"Deepa, Eshan, Farid, Bala, Amit sit in a row in that order from left to right. Who is exactly in the middle?",Bala,Deepa,Eshan,Farid,D,"With 5 people, the 3rd from left is the middle person: Farid."
+362,Logical Reasoning,Calendars,hard,"If today is Thursday, what day will it be after 15 days?",Thursday,Friday 1,Saturday,Friday,D,15 mod 7 = 1; counting 1 day(s) from Thursday gives Friday.
+363,Logical Reasoning,Analogy,easy,Bird : Nest :: Bee : ?,Wing,Hive,Honey,Flower,B,Each creature is matched with its dwelling.
+364,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Diligent'.,Slow,Hardworking,Careless,Rude,B,'Diligent' means 'Hardworking'.
+365,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Generous'.,Noble,Stingy,Kind,Rich,B,The opposite of 'Generous' is 'Stingy'.
+366,Verbal Ability,Sentence Completion,medium,Hardly had he entered the hall ______ the lights went off.,then,that,than,when,D,'Hardly had ... when' is the fixed construction.
+367,Logical Reasoning,Number Series,easy,"Complete the series: 5, 11, 17, 23, 29, ?",35,41,34,37,A,Common difference is 6; next term = 29 + 6 = 35.
+368,Logical Reasoning,Number Series,medium,"Find the missing term: 49, 64, 81, 100, ?",126,110,22,121,D,Terms are squares of 7 to 10; next = 11^2 = 121.
+369,Logical Reasoning,Number Series,medium,"What comes next: 1, 5, 6, 11, 17, ?",34,30,25,28,D,Each term is the sum of the previous two; next = 17 + 11 = 28.
+370,Logical Reasoning,Coding Decoding,medium,"If BAG is coded as CBH, how is CAB coded?",BAC,DBC,ECD,BZA,B,"Each letter moves 1 step(s) forward, so CAB -> DBC."
+371,Logical Reasoning,Direction Sense,medium,"A man walks 4 km north, then turns right and walks 3 km. How far is he from the starting point?",1 km,7 km,5 km,5 km 1,C,The path forms a right triangle: sqrt(4^2 + 3^2) = 5 km.
+372,Logical Reasoning,Seating Arrangement,medium,"Amit, Deepa, Bala, Chitra, Eshan sit in a row in that order from left to right. Who is exactly in the middle?",Chitra,Amit,Bala,Deepa,C,"With 5 people, the 3rd from left is the middle person: Bala."
+373,Logical Reasoning,Clocks,hard,What is the angle between the hands of a clock at 6:40?,180 degrees,40 degrees,30 degrees,55 degrees,B,Angle = |30H - 5.5M| = |30x6 - 5.5x40| = 40 degrees.
+374,Logical Reasoning,Calendars,hard,"If today is Thursday, what day will it be after 45 days?",Sunday,Thursday,Saturday,Monday,A,45 mod 7 = 3; counting 3 day(s) from Thursday gives Sunday.
+375,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Abundant'.,Plentiful,Tiny,Scarce,Weak,A,'Abundant' means 'Plentiful'.
+376,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Fragile'.,Thin,Light,Brittle,Sturdy,D,The opposite of 'Fragile' is 'Sturdy'.
+377,Verbal Ability,Sentence Completion,medium,She is one of the ______ students in the class.,brighter,more bright,brightest,bright,C,'One of the' takes a superlative plural form.
+378,Logical Reasoning,Number Series,easy,"Complete the series: 9, 19, 29, 39, 49, ?",59,58,61,69,A,Common difference is 10; next term = 49 + 10 = 59.
+379,Logical Reasoning,Number Series,medium,"What comes next: 4, 6, 10, 16, 26, ?",42,39,52,44,A,Each term is the sum of the previous two; next = 26 + 16 = 42.
+380,Logical Reasoning,Coding Decoding,medium,"If SUN is coded as TVO, how is TAP coded?",SZO,UBQ,VCR,PAT,B,"Each letter moves 1 step(s) forward, so TAP -> UBQ."
+381,Logical Reasoning,Direction Sense,medium,"A man walks 4 km north, then turns right and walks 8 km. How far is he from the starting point?",4 km,10.94 km,8.94 km,12 km,C,The path forms a right triangle: sqrt(4^2 + 8^2) = 8.94 km.
+382,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Scrutinise'.,Examine,Praise,Ignore,Reject,A,'Scrutinise' means 'Examine'.
+383,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Cautious'.,Careful,Reckless,Slow,Alert,B,The opposite of 'Cautious' is 'Reckless'.
+384,Verbal Ability,Sentence Completion,medium,The team could not agree ______ the final design.,of,in,at,on,D,The idiom is 'agree on' a thing.
+385,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Imminent'.,Delayed,Distant,Absent,Impending,D,'Imminent' means 'Impending'.
+386,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Innocent'.,Pure,Naive,Guilty,Simple,C,The opposite of 'Innocent' is 'Guilty'.
+387,Verbal Ability,Sentence Completion,medium,The candidate was asked to ______ his answer with examples.,subside,substitute,substantiate,sustain,C,'Substantiate' means to support with evidence.
+388,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Ample'.,Meagre,Sufficient,Costly,Narrow,B,'Ample' means 'Sufficient'.
+389,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Humble'.,Modest,Simple,Quiet,Arrogant,D,The opposite of 'Humble' is 'Arrogant'.
+390,Verbal Ability,Sentence Completion,medium,He has been working here ______ 2019.,for,from,during,since,D,'Since' is used with a point of time in the present perfect continuous.
+391,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Rectify'.,Repeat,Hide,Spoil,Correct,D,'Rectify' means 'Correct'.
+392,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Rigid'.,Stiff,Firm,Hard,Flexible,D,The opposite of 'Rigid' is 'Flexible'.
+393,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Obsolete'.,Modern,Outdated,Useful,Rare,B,'Obsolete' means 'Outdated'.
+394,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Joyful'.,Glad,Sorrowful,Merry,Lively,B,The opposite of 'Joyful' is 'Sorrowful'.
+395,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Frugal'.,Thrifty,Wasteful,Rich,Generous,A,'Frugal' means 'Thrifty'.
+396,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Liberal'.,Free,Broad,Conservative,Kind,C,The opposite of 'Liberal' is 'Conservative'.
+397,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Eloquent'.,Harsh,Dull,Silent,Expressive,D,'Eloquent' means 'Expressive'.
+398,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Minimise'.,Maximise,Lower,Shrink,Reduce,A,The opposite of 'Minimise' is 'Maximise'.
+399,Verbal Ability,Synonyms,easy,Choose the word most similar in meaning to 'Resilient'.,Bright,Idle,Tough,Fragile,C,'Resilient' means 'Tough'.
+400,Verbal Ability,Antonyms,easy,Choose the word most opposite in meaning to 'Ancient'.,Ruined,Modern,Old,Historic,B,The opposite of 'Ancient' is 'Modern'.

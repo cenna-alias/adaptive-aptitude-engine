@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container hero">
+  <span class="pill">AI + ML powered placement prep</span>
+  <h1>Aptitude testing that <span>adapts to every answer</span></h1>
+  <p>A 20-question adaptive paper across quantitative, logical, verbal and data interpretation.
+     Difficulty climbs when you're right and eases when you're wrong, then a Random Forest model
+     reads your topic-wise accuracy and predicts your level, with a weak-area retake built in.</p>
+  <div class="hero-actions">
+    {% if user %}
+      <a class="btn btn-primary" href="{{ url_for('dashboard') }}">Go to dashboard</a>
+      <a class="btn btn-accent" href="{{ url_for('test_start') }}">Start adaptive test</a>
+    {% else %}
+      <a class="btn btn-primary" href="{{ url_for('register') }}">Create account</a>
+      <a class="btn btn-ghost" href="{{ url_for('login') }}">I already have an account</a>
+    {% endif %}
+  </div>
+</div>
+
+<section class="page container">
+  <div class="grid grid-4 mb">
+    <div class="card stat"><div class="stat-value">{{ stats.questions }}</div><div class="stat-label">Verified questions</div></div>
+    <div class="card stat"><div class="stat-value">{{ stats.students }}</div><div class="stat-label">Registered students</div></div>
+    <div class="card stat"><div class="stat-value">{{ stats.attempts }}</div><div class="stat-label">Tests completed</div></div>
+    <div class="card stat"><div class="stat-value">{{ stats.model_accuracy or '--' }}%</div><div class="stat-label">Model accuracy</div></div>
+  </div>
+  <div class="grid grid-3">
+    <div class="card feature"><div class="feature-icon">1</div><h3>Adaptive difficulty ladder</h3>
+      <p>Two right answers promote you to harder questions, two wrong ones step you back down.</p></div>
+    <div class="card feature"><div class="feature-icon">2</div><h3>No repeats, no wrong keys</h3>
+      <p>Every answer key is computed, and no question repeats inside a test.</p></div>
+    <div class="card feature"><div class="feature-icon">3</div><h3>Topic-wise score card</h3>
+      <p>Accuracy per topic and difficulty, full solution review and your weak areas.</p></div>
+    <div class="card feature"><div class="feature-icon">4</div><h3>Random Forest level prediction</h3>
+      <p>13 features, trained on 9,600 student records, place you as Beginner, Intermediate or Advanced.</p></div>
+    <div class="card feature"><div class="feature-icon">5</div><h3>Weak-area retake</h3>
+      <p>One click builds a fresh paper made only of your weak topics.</p></div>
+    <div class="card feature"><div class="feature-icon">6</div><h3>Admin control room</h3>
+      <p>The superuser sees every student and score and can add, edit or delete questions.</p></div>
+  </div>
+</section>
+{% endblock %}

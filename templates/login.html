@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block body %}
+<div class="container">
+  <div class="auth-wrap card">
+    <h2 class="card-title">Student login</h2>
+    <form method="post">
+      <div class="form-row"><label for="identifier">Username or email</label><input id="identifier" name="identifier" required autofocus></div>
+      <div class="form-row"><label for="password">Password</label><input id="password" name="password" type="password" required></div>
+      <button class="btn btn-primary btn-block" type="submit">Log in</button>
+    </form>
+    <p class="form-hint">New here? <a href="{{ url_for('register') }}">Create an account</a><br>
+      Administrator? <a href="{{ url_for('admin_login') }}">Superuser login</a></p>
+  </div>
+</div>
+{% endblock %}

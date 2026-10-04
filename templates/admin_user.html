@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}{{ student.username }} - student detail{% endblock %}
+{% block body %}
+<section class="page container">
+  <div class="row-between mb">
+    <div>
+      <a href="{{ url_for('admin_dashboard') }}">&larr; Back to admin</a>
+      <h1 style="margin:8px 0 0">{{ student.full_name or student.username }}</h1>
+      <p class="muted" style="margin:4px 0 0">{{ student.username }} &middot; {{ student.email }} &middot; {{ student.college or 'No college' }}</p>
+    </div>
+    <form method="post" action="{{ url_for('admin_user_delete', user_id=student.id) }}" onsubmit="return confirm('Delete this student and all scores?')">
+      <button class="btn btn-danger">Delete student</button>
+    </form>
+  </div>
+
+  <div class="grid grid-4 mb">
+    <div class="card stat"><div class="stat-value">{{ attempts|length }}</div><div class="stat-label">Tests</div></div>
+    <div class="card stat"><div class="stat-value">{{ student.best_score }}%</div><div class="stat-label">Best</div></div>
+    <div class="card stat"><div class="stat-value">{{ student.avg_score }}%</div><div class="stat-label">Average</div></div>
+    <div class="card stat"><div class="stat-value" style="font-size:1.5rem">{{ attempts[0].predicted_level if attempts else '--' }}</div><div class="stat-label">Latest level</div></div>
+  </div>
+
+  <div class="grid grid-2">
+    <div class="card">
+      <h3 class="card-title">Topic accuracy</h3>
+      {% for topic, s in topic_totals|dictsort %}
+        <div class="bar-row">
+          <div class="bar-head"><span>{{ topic }} <span class="muted">({{ s.correct }}/{{ s.total }})</span></span><b>{{ s.accuracy }}%</b></div>
+          <div class="bar"><span style="width: {{ s.accuracy }}%"></span></div>
+        </div>
+      {% else %}<p class="muted">No attempts yet.</p>{% endfor %}
+    </div>
+    <div class="card">
+      <h3 class="card-title">Attempts</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Mode</th><th>Score</th><th>Level</th><th>Date</th><th></th></tr></thead>
+          <tbody>
+          {% for a in attempts %}
+            <tr>
+              <td>{{ a.id }}</td><td>{{ a.mode }}</td><td><b>{{ a.percentage }}%</b></td>
+              <td><span class="badge badge-{{ (a.predicted_level or 'muted')|lower }}">{{ a.predicted_level }}</span></td>
+              <td>{{ a.finished_at.strftime('%d %b %Y') if a.finished_at else '-' }}</td>
+              <td><a class="btn btn-ghost btn-sm" href="{{ url_for('report', attempt_id=a.id) }}">Report</a></td>
+            </tr>
+          {% else %}<tr><td colspan="6" class="empty">No attempts.</td></tr>{% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

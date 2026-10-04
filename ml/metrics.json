@@ -1,0 +1,57 @@
+{
+  "accuracy": 83.49,
+  "n_rows": 9600,
+  "features": [
+    "tests_taken",
+    "quant_accuracy",
+    "logical_accuracy",
+    "verbal_accuracy",
+    "di_accuracy",
+    "avg_time_per_question",
+    "attempted_ratio",
+    "easy_accuracy",
+    "medium_accuracy",
+    "hard_accuracy",
+    "retake_count",
+    "consistency_score",
+    "overall_accuracy"
+  ],
+  "classes": [
+    "Advanced",
+    "Beginner",
+    "Intermediate"
+  ],
+  "report": {
+    "Advanced": {
+      "precision": 0.9033112582781457,
+      "recall": 0.8973684210526316,
+      "f1-score": 0.9003300330033003,
+      "support": 760.0
+    },
+    "Beginner": {
+      "precision": 0.7808219178082192,
+      "recall": 0.8300970873786407,
+      "f1-score": 0.8047058823529412,
+      "support": 412.0
+    },
+    "Intermediate": {
+      "precision": 0.796423658872077,
+      "recall": 0.7740641711229946,
+      "f1-score": 0.7850847457627118,
+      "support": 748.0
+    },
+    "accuracy": 0.8348958333333333,
+    "macro avg": {
+      "precision": 0.8268522783194806,
+      "recall": 0.833843226518089,
+      "f1-score": 0.8300402203729845,
+      "support": 1920.0
+    },
+    "weighted avg": {
+      "precision": 0.8353854600336931,
+      "recall": 0.8348958333333333,
+      "f1-score": 0.8349130408554314,
+      "support": 1920.0
+    }
+  }
+}

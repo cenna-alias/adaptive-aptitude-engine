@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Edit' if q else 'Add' }} question{% endblock %}
+{% block body %}
+{% set topics = ['Quantitative Aptitude', 'Logical Reasoning', 'Verbal Ability', 'Data Interpretation'] %}
+<section class="page container" style="max-width:860px">
+  <a href="{{ url_for('admin_questions') }}">&larr; Back to question bank</a>
+  <div class="card mt">
+    <h2 class="card-title">{{ 'Edit question #' ~ q.id if q else 'Add a new question' }}</h2>
+    <form method="post">
+      <div class="grid grid-3">
+        <div class="form-row">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            {% for t in topics %}<option value="{{ t }}" {{ 'selected' if q and q.topic == t }}>{{ t }}</option>{% endfor %}
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="subtopic">Subtopic</label>
+          <input id="subtopic" name="subtopic" value="{{ q.subtopic if q else '' }}" placeholder="e.g. Percentages">
+        </div>
+        <div class="form-row">
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty" name="difficulty">
+            {% for d in ['easy', 'medium', 'hard'] %}<option value="{{ d }}" {{ 'selected' if q and q.difficulty == d }}>{{ d|capitalize }}</option>{% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="question">Question text</label>
+        <textarea id="question" name="question" required>{{ q.question if q else '' }}</textarea>
+      </div>
+      <div class="grid grid-2">
+        {% for l in ['a', 'b', 'c', 'd'] %}
+          <div class="form-row">
+            <label for="option_{{ l }}">Option {{ l|upper }}</label>
+            <input id="option_{{ l }}" name="option_{{ l }}" required value="{{ q['option_' ~ l] if q else '' }}">
+          </div>
+        {% endfor %}
+      </div>
+      <div class="grid grid-2">
+        <div class="form-row">
+          <label for="correct_option">Correct option</label>
+          <select id="correct_option" name="correct_option">
+            {% for l in ['A', 'B', 'C', 'D'] %}<option value="{{ l }}" {{ 'selected' if q and q.correct_option == l }}>{{ l }}</option>{% endfor %}
+          </select>
+        </div>
+        {% if q %}
+        <div class="form-row">
+          <label><input type="checkbox" name="active" value="1" style="width:auto" {{ 'checked' if q.active }}> Active (served in tests)</label>
+        </div>
+        {% endif %}
+      </div>
+      <div class="form-row">
+        <label for="explanation">Explanation / solution</label>
+        <textarea id="explanation" name="explanation">{{ q.explanation if q else '' }}</textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">{{ 'Save changes' if q else 'Add question' }}</button>
+    </form>
+  </div>
+</section>
+{% endblock %}

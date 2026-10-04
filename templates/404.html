@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Not found{% endblock %}
+{% block body %}
+<div class="container">
+  <div class="auth-wrap card" style="text-align:center">
+    <div class="stat-value">404</div>
+    <p class="muted">That page or record does not exist.</p>
+    <a class="btn btn-primary" href="{{ url_for('home') }}">Back home</a>
+  </div>
+</div>
+{% endblock %}

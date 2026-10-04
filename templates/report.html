@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Score card #{{ attempt.id }}{% endblock %}
+{% block body %}
+<section class="page container">
+  <div class="row-between mb">
+    <div>
+      <span class="pill" style="margin:0">{{ 'Weak-area retake' if attempt.mode == 'retake' else 'Full adaptive test' }}</span>
+      <h1 style="margin:10px 0 0">Score card #{{ attempt.id }}</h1>
+      <p class="muted" style="margin:4px 0 0">{{ attempt.user.full_name or attempt.user.username }} &middot;
+        {{ (attempt.finished_at or attempt.started_at).strftime('%d %B %Y, %H:%M') }} &middot; {{ attempt.time_taken }} seconds</p>
+    </div>
+    {% if not user.is_admin %}
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn btn-ghost" href="{{ url_for('dashboard') }}">Dashboard</a>
+      {% if weak %}<a class="btn btn-accent" href="{{ url_for('test_retake', attempt_id=attempt.id) }}">Retake weak areas</a>{% endif %}
+      <a class="btn btn-primary" href="{{ url_for('test_start') }}">New test</a>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="grid grid-3 mb">
+    <div class="card" style="text-align:center">
+      <div class="score-ring" style="--pct: {{ attempt.percentage }}">
+        <div class="score-ring-inner"><div><b>{{ attempt.percentage }}%</b><small>SCORE</small></div></div>
+      </div>
+      <p class="muted mt">{{ attempt.correct_answers }} correct out of {{ attempt.total_questions }}</p>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Predicted level (ML)</h3>
+      <p style="margin:0 0 10px"><span class="badge badge-{{ level|lower }}" style="font-size:1rem;padding:8px 16px">{{ level }}</span></p>
+      <p class="muted" style="font-size:.9rem;margin:0 0 14px">Confidence {{ confidence }}% &middot; {{ source }}
+        {% if metrics.accuracy %}&middot; model accuracy {{ metrics.accuracy }}%{% endif %}</p>
+      {% for cls, p in probs|dictsort %}
+        <div class="bar-row"><div class="bar-head"><span>{{ cls }}</span><b>{{ p }}%</b></div>
+          <div class="bar"><span style="width: {{ p }}%"></span></div></div>
+      {% endfor %}
+    </div>
+    <div class="card">
+      <h3 class="card-title">Accuracy by difficulty</h3>
+      {% for d in ['easy', 'medium', 'hard'] %}{% if diffs.get(d) %}
+        <div class="bar-row">
+          <div class="bar-head"><span>{{ d|capitalize }} <span class="muted">({{ diffs[d].correct }}/{{ diffs[d].total }})</span></span><b>{{ diffs[d].accuracy }}%</b></div>
+          <div class="bar"><span style="width: {{ diffs[d].accuracy }}%"></span></div>
+        </div>
+      {% endif %}{% endfor %}
+      <div class="explain">{{ advice }}</div>
+    </div>
+  </div>
+
+  <div class="grid grid-2">
+    <div class="card">
+      <h3 class="card-title">Topic-wise accuracy</h3>
+      {% for topic, s in topics|dictsort %}
+        <div class="bar-row">
+          <div class="bar-head"><span>{{ topic }} <span class="muted">({{ s.correct }}/{{ s.total }})</span>
+            {% if topic in weak %}<span class="badge badge-danger">weak</span>{% endif %}</span><b>{{ s.accuracy }}%</b></div>
+          <div class="bar"><span style="width: {{ s.accuracy }}%"></span></div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="card">
+      <h3 class="card-title">Inputs used by the model</h3>
+      <div class="table-wrap"><table><tbody>
+        {% for k, v in features|dictsort %}<tr><td class="muted">{{ k.replace('_', ' ')|capitalize }}</td><td><b>{{ v }}</b></td></tr>{% endfor %}
+      </tbody></table></div>
+    </div>
+  </div>
+
+  <div class="card mt">
+    <h3 class="card-title">Question review</h3>
+    {% for a in attempt.answers %}
+      <div class="review-item {{ 'correct' if a.is_correct else 'wrong' }}">
+        <div class="review-meta">
+          <span class="badge badge-muted">Q{{ a.sequence }}</span>
+          <span class="badge badge-muted">{{ a.topic }}</span>
+          <span class="badge badge-{{ a.difficulty }}">{{ a.difficulty }}</span>
+          <span class="badge {{ 'badge-advanced' if a.is_correct else 'badge-danger' }}">{{ 'Correct' if a.is_correct else 'Wrong' }}</span>
+          <span>{{ a.seconds }}s</span>
+        </div>
+        <div class="review-q">{{ a.question.question }}</div>
+        <div class="review-ans">Your answer:
+          <b>{% if a.selected_option %}{{ a.selected_option }}. {{ a.question.option_text(a.selected_option) }}{% else %}Not answered{% endif %}</b>
+          &nbsp;|&nbsp; Correct: <b>{{ a.question.correct_option }}. {{ a.question.option_text(a.question.correct_option) }}</b></div>
+        {% if a.question.explanation %}<div class="explain">{{ a.question.explanation }}</div>{% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

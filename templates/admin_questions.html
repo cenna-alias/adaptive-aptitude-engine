@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Question bank{% endblock %}
+{% block body %}
+<section class="page container">
+  <div class="row-between mb">
+    <div>
+      <a href="{{ url_for('admin_dashboard') }}">&larr; Back to admin</a>
+      <h1 style="margin:8px 0 0">Question bank <span class="muted" style="font-size:1rem">({{ total }} found)</span></h1>
+    </div>
+    <a class="btn btn-accent" href="{{ url_for('admin_question_form') }}">Add question</a>
+  </div>
+
+  <form class="card mb filters" method="get">
+    <div class="form-row">
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic">
+        <option value="">All topics</option>
+        {% for t in topics %}<option value="{{ t }}" {{ 'selected' if t == topic }}>{{ t }}</option>{% endfor %}
+      </select>
+    </div>
+    <div class="form-row" style="flex:1">
+      <label for="q">Search text</label>
+      <input id="q" name="q" value="{{ search }}" placeholder="e.g. train, ratio, synonym">
+    </div>
+    <button class="btn btn-primary" type="submit">Filter</button>
+  </form>
+
+  <div class="card">
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>ID</th><th>Topic</th><th>Difficulty</th><th>Question</th><th>Answer</th><th>Status</th><th></th></tr></thead>
+        <tbody>
+        {% for q in items %}
+          <tr>
+            <td>{{ q.id }}</td>
+            <td>{{ q.topic }}<div class="muted" style="font-size:.76rem">{{ q.subtopic }}</div></td>
+            <td><span class="badge badge-{{ q.difficulty }}">{{ q.difficulty }}</span></td>
+            <td style="max-width:420px">{{ q.question }}</td>
+            <td><b>{{ q.correct_option }}</b>. {{ q.option_text(q.correct_option) }}</td>
+            <td>{% if q.active %}<span class="badge badge-advanced">Active</span>{% else %}<span class="badge badge-muted">Disabled</span>{% endif %}</td>
+            <td style="white-space:nowrap">
+              <a class="btn btn-ghost btn-sm" href="{{ url_for('admin_question_form', qid=q.id) }}">Edit</a>
+              <form class="inline-form" method="post" action="{{ url_for('admin_question_toggle', qid=q.id) }}">
+                <button class="btn btn-ghost btn-sm">{{ 'Disable' if q.active else 'Enable' }}</button>
+              </form>
+              <form class="inline-form" method="post" action="{{ url_for('admin_question_delete', qid=q.id) }}" onsubmit="return confirm('Delete question #{{ q.id }}?')">
+                <button class="btn btn-danger btn-sm">Delete</button>
+              </form>
+            </td>
+          </tr>
+        {% else %}<tr><td colspan="7" class="empty">No questions match.</td></tr>{% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="row-between mt">
+      <span class="muted">Page {{ page }} of {{ pages }}</span>
+      <div style="display:flex;gap:8px">
+        {% if page > 1 %}<a class="btn btn-ghost btn-sm" href="{{ url_for('admin_questions', page=page-1, topic=topic, q=search) }}">Previous</a>{% endif %}
+        {% if page < pages %}<a class="btn btn-ghost btn-sm" href="{{ url_for('admin_questions', page=page+1, topic=topic, q=search) }}">Next</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
