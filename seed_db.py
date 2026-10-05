@@ -1,10 +1,3 @@
-"""
-Creates instance/aptitude.db, loads data/questions.csv and creates the superuser.
-
-Run:  python seed_db.py            # keeps existing questions
-      python seed_db.py --reset    # wipes questions and reloads the CSV
-"""
-
 import csv
 import sys
 
