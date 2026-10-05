@@ -26,21 +26,6 @@
       <a class="btn btn-primary" href="{{ url_for('test_start') }}">Take your first test</a>
     </div>
   {% else %}
-  <div class="grid grid-2">
-    <div class="card">
-      <h3 class="card-title">Topic-wise accuracy (all attempts)</h3>
-      {% for topic, s in topic_totals|dictsort %}
-        <div class="bar-row">
-          <div class="bar-head"><span>{{ topic }} <span class="muted">({{ s.correct }}/{{ s.total }})</span></span><b>{{ s.accuracy }}%</b></div>
-          <div class="bar"><span style="width: {{ s.accuracy }}%"></span></div>
-        </div>
-      {% endfor %}
-      {% if weak %}
-        <p class="muted mt">Weak areas: {% for t in weak %}<span class="badge badge-danger">{{ t }}</span> {% endfor %}</p>
-      {% else %}
-        <p class="muted mt">No topic below 60% - keep pushing difficulty.</p>
-      {% endif %}
-    </div>
     <div class="card">
       <h3 class="card-title">Score trend (last {{ trend|length }} attempts)</h3>
       <div class="trend">
@@ -59,7 +44,7 @@
     <h3 class="card-title">All scores</h3>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>Date</th><th>Mode</th><th>Score</th><th>Accuracy</th><th>Predicted level</th><th>Confidence</th><th>Time</th><th></th></tr></thead>
+        <thead><tr><th>#</th><th>Date</th><th>Mode</th><th>Score</th><th>Accuracy</th><th>Predicted level</th><th>Time</th><th></th></tr></thead>
         <tbody>
         {% for a in attempts %}
           <tr>
@@ -69,7 +54,6 @@
             <td>{{ a.correct_answers }}/{{ a.total_questions }}</td>
             <td><b>{{ a.percentage }}%</b></td>
             <td><span class="badge badge-{{ (a.predicted_level or 'muted')|lower }}">{{ a.predicted_level or '-' }}</span></td>
-            <td>{{ a.level_confidence or '-' }}%</td>
             <td>{{ a.time_taken }}s</td>
             <td style="white-space:nowrap">
               <a class="btn btn-ghost btn-sm" href="{{ url_for('report', attempt_id=a.id) }}">Report</a>

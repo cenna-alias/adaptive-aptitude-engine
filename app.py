@@ -76,7 +76,6 @@ def home():
         "questions": Question.query.filter_by(active=True).count(),
         "students": User.query.filter_by(is_admin=False).count(),
         "attempts": TestAttempt.query.filter_by(completed=True).count(),
-        "model_accuracy": predictor.load_metrics(app.config["METRICS_PATH"]).get("accuracy"),
     }
     return render_template("home.html", stats=stats)
 
@@ -331,8 +330,6 @@ def admin_dashboard():
         "attempts": len(done),
         "questions": Question.query.count(),
         "active_questions": Question.query.filter_by(active=True).count(),
-        "avg_score": round(sum(a.percentage for a in done) / len(done), 2) if done else 0.0,
-        "model_accuracy": predictor.load_metrics(app.config["METRICS_PATH"]).get("accuracy"),
     }
     return render_template("admin_dashboard.html", users=users, attempts=attempts, stats=stats,
                            level_counts=level_counts, topic_totals=aggregate_topics(done))

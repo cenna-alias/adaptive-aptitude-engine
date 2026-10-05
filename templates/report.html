@@ -28,8 +28,6 @@
     <div class="card">
       <h3 class="card-title">Predicted level (ML)</h3>
       <p style="margin:0 0 10px"><span class="badge badge-{{ level|lower }}" style="font-size:1rem;padding:8px 16px">{{ level }}</span></p>
-      <p class="muted" style="font-size:.9rem;margin:0 0 14px">Confidence {{ confidence }}% &middot; {{ source }}
-        {% if metrics.accuracy %}&middot; model accuracy {{ metrics.accuracy }}%{% endif %}</p>
       {% for cls, p in probs|dictsort %}
         <div class="bar-row"><div class="bar-head"><span>{{ cls }}</span><b>{{ p }}%</b></div>
           <div class="bar"><span style="width: {{ p }}%"></span></div></div>

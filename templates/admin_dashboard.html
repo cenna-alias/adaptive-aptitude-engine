@@ -17,7 +17,6 @@
   <div class="grid grid-4 mb">
     <div class="card stat"><div class="stat-value">{{ stats.users }}</div><div class="stat-label">Students</div></div>
     <div class="card stat"><div class="stat-value">{{ stats.attempts }}</div><div class="stat-label">Tests completed</div></div>
-    <div class="card stat"><div class="stat-value">{{ stats.avg_score }}%</div><div class="stat-label">Average score</div></div>
     <div class="card stat"><div class="stat-value">{{ stats.active_questions }}/{{ stats.questions }}</div><div class="stat-label">Active questions</div></div>
   </div>
 
@@ -41,7 +40,6 @@
           <div class="bar"><span style="width: {{ (c * 100 / total_lv) if total_lv else 0 }}%"></span></div>
         </div>
       {% endfor %}
-      <p class="muted" style="font-size:.85rem">Random Forest test accuracy: {{ stats.model_accuracy or '--' }}%</p>
     </div>
   </div>
 
@@ -81,7 +79,7 @@
     <h3 class="card-title">Recent test attempts</h3>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>#</th><th>Student</th><th>Mode</th><th>Score</th><th>%</th><th>Level</th><th>Confidence</th><th>Finished</th><th></th></tr></thead>
+        <thead><tr><th>#</th><th>Student</th><th>Mode</th><th>Score</th><th>%</th><th>Level</th><th>Finished</th><th></th></tr></thead>
         <tbody>
         {% for a in attempts %}
           <tr>
@@ -91,11 +89,10 @@
             <td>{{ a.correct_answers }}/{{ a.total_questions }}</td>
             <td><b>{{ a.percentage }}%</b></td>
             <td><span class="badge badge-{{ (a.predicted_level or 'muted')|lower }}">{{ a.predicted_level }}</span></td>
-            <td>{{ a.level_confidence }}%</td>
             <td>{{ a.finished_at.strftime('%d %b %Y, %H:%M') if a.finished_at else '-' }}</td>
             <td><a class="btn btn-ghost btn-sm" href="{{ url_for('report', attempt_id=a.id) }}">Report</a></td>
           </tr>
-        {% else %}<tr><td colspan="9" class="empty">No attempts yet.</td></tr>{% endfor %}
+        {% else %}<tr><td colspan="8" class="empty">No attempts yet.</td></tr>{% endfor %}
         </tbody>
       </table>
     </div>
