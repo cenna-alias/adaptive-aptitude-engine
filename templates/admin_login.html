@@ -1,14 +1,13 @@
 {% extends "base.html" %}
-{% block title %}Superuser login{% endblock %}
+{% block title %}Admin login{% endblock %}
 {% block body %}
 <div class="container">
   <div class="auth-wrap card">
-    <span class="pill">Restricted area</span>
-    <h2 class="card-title">Superuser login</h2>
+    <h2 class="card-title">Admin login</h2>
     <form method="post">
-      <div class="form-row"><label for="identifier">Superuser username</label><input id="identifier" name="identifier" required autofocus></div>
+      <div class="form-row"><label for="identifier">Username</label><input id="identifier" name="identifier" required autofocus></div>
       <div class="form-row"><label for="password">Password</label><input id="password" name="password" type="password" required></div>
-      <button class="btn btn-accent btn-block" type="submit">Sign in as superuser</button>
+      <button class="btn btn-accent btn-block" type="submit">Log in</button>
     </form>
   </div>
 </div>

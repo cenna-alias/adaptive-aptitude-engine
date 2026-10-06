@@ -8,7 +8,7 @@
       <p class="muted" style="margin:4px 0 0">{{ attempts|length }} test(s) completed{% if user.college %} &middot; {{ user.college }}{% endif %}</p>
     </div>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
-      <a class="btn btn-primary" href="{{ url_for('test_start') }}">Start 20-question adaptive test</a>
+      <a class="btn btn-primary" href="{{ url_for('test_start') }}">Start adaptive test</a>
       {% if latest and weak %}<a class="btn btn-accent" href="{{ url_for('test_retake', attempt_id=latest.id) }}">Retake weak areas</a>{% endif %}
     </div>
   </div>

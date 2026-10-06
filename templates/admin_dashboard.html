@@ -4,12 +4,9 @@
 <section class="page container">
   <div class="row-between mb">
     <div>
-      <span class="pill" style="margin:0">Superuser</span>
-      <h1 style="margin:10px 0 0">Admin control room</h1>
     </div>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
       <a class="btn btn-primary" href="{{ url_for('admin_questions') }}">Manage questions</a>
-      <a class="btn btn-accent" href="{{ url_for('admin_question_form') }}">Add question</a>
       <a class="btn btn-ghost" href="{{ url_for('admin_export_scores') }}">Export scores CSV</a>
     </div>
   </div>
