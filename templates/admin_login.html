@@ -2,13 +2,14 @@
 {% block title %}Admin login{% endblock %}
 {% block body %}
 <div class="container">
-  <div class="auth-wrap card">
+  <div class="auth-wrap card auth-wide">
     <h2 class="card-title">Admin login</h2>
     <form method="post">
       <div class="form-row"><label for="identifier">Username</label><input id="identifier" name="identifier" required autofocus></div>
       <div class="form-row"><label for="password">Password</label><input id="password" name="password" type="password" required></div>
-      <button class="btn btn-accent btn-block" type="submit">Log in</button>
+      <button class="btn btn-primary btn-block" type="submit">Log in</button>
     </form>
+    <p class="form-hint">Student? <a href="{{ url_for('login') }}">Login</a></p>
   </div>
 </div>
 {% endblock %}

@@ -1,7 +1,11 @@
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import check_password_hash, generate_password_hash
+
+def india_time():
+    return datetime.now(ZoneInfo("Asia/Kolkata")).replace(tzinfo=None)
 
 db = SQLAlchemy()
 
@@ -80,7 +84,7 @@ class TestAttempt(db.Model):
     level_confidence = db.Column(db.Float)
     time_taken = db.Column(db.Integer, default=0)          # seconds
     completed = db.Column(db.Boolean, default=False)
-    started_at = db.Column(db.DateTime, default=datetime.utcnow)
+    started_at = db.Column(db.DateTime, default=india_time)
     finished_at = db.Column(db.DateTime)
 
     answers = db.relationship("Answer", backref="attempt", lazy=True,

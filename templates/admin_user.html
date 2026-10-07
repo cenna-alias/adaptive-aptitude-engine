@@ -4,7 +4,6 @@
 <section class="page container">
   <div class="row-between mb">
     <div>
-      <a href="{{ url_for('admin_dashboard') }}">&larr; Back to admin</a>
       <h1 style="margin:8px 0 0">{{ student.full_name or student.username }}</h1>
       <p class="muted" style="margin:4px 0 0">{{ student.username }} &middot; {{ student.email }} &middot; {{ student.college or 'No college' }}</p>
     </div>

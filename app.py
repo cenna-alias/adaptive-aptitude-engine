@@ -2,6 +2,7 @@ import csv
 import io
 import os
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from functools import wraps
 
 from flask import (Flask, Response, abort, flash, redirect, render_template,
@@ -10,6 +11,9 @@ from flask import (Flask, Response, abort, flash, redirect, render_template,
 from config import Config
 from engine import adaptive, predictor
 from models import Answer, Question, TestAttempt, User, db
+
+def india_time():
+    return datetime.now(ZoneInfo("Asia/Kolkata")).replace(tzinfo=None)
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -58,7 +62,7 @@ def aggregate_topics(attempts):
 
 @app.context_processor
 def inject_globals():
-    return {"user": current_user(), "year": datetime.utcnow().year}
+    return {"user": current_user(), "year": india_time().year}
 
 
 # ---------------------------------------------------------------- public
@@ -259,7 +263,7 @@ def test_finish():
     attempt.percentage = round(correct * 100 / total, 2)
     attempt.time_taken = st.get("elapsed", 0)
     attempt.completed = True
-    attempt.finished_at = datetime.utcnow()
+    attempt.finished_at = india_time()
     db.session.commit()
 
     level, conf, *_ = predictor.predict_level(attempt, u, app.config["MODEL_PATH"])
