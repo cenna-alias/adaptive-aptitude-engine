@@ -56,12 +56,6 @@
         </div>
       {% endfor %}
     </div>
-    <div class="card">
-      <h3 class="card-title">Inputs used by the model</h3>
-      <div class="table-wrap"><table><tbody>
-        {% for k, v in features|dictsort %}<tr><td class="muted">{{ k.replace('_', ' ')|capitalize }}</td><td><b>{{ v }}</b></td></tr>{% endfor %}
-      </tbody></table></div>
-    </div>
   </div>
 
   <div class="card mt">
