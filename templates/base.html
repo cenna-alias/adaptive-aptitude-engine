@@ -10,23 +10,29 @@
 <nav class="nav">
   <div class="container nav-inner">
     <a class="brand" href="{{ url_for('home') }}"><span class="brand-mark">A</span> AptiAdapt</a>
-    <div class="nav-links">
+        <div class="nav-links">
+      {% set ep = request.endpoint %}
       {% if user %}
         {% if user.is_admin %}
-          <a href="{{ url_for('admin_dashboard') }}">Admin</a>
-          <a href="{{ url_for('admin_questions') }}">Questions</a>
+          <a class="{{ 'active' if ep == 'admin_dashboard' }}" href="{{ url_for('admin_dashboard') }}">Admin</a>
+          <a class="{{ 'active' if ep in ['admin_questions', 'admin_question_new', 'admin_question_edit'] }}" href="{{ url_for('admin_questions') }}">Questions</a>
         {% else %}
-          <a href="{{ url_for('dashboard') }}">Dashboard</a>
-          <a href="{{ url_for('test_start') }}">Start Test</a>
+          <a class="{{ 'active' if ep in ['dashboard', 'report'] }}" href="{{ url_for('dashboard') }}">Dashboard</a>
+          <a class="{{ 'active' if ep and ep.startswith('test') }}" href="{{ url_for('test_start') }}">Start Test</a>
         {% endif %}
         <span class="muted">{{ user.username }}</span>
         <a class="btn btn-ghost btn-sm" href="{{ url_for('logout') }}">Log out</a>
       {% else %}
-        <a href="{{ url_for('login') }}">Login</a>
-        <a href="{{ url_for('admin_login') }}">Admin</a>
-        <a class="btn btn-primary btn-sm" href="{{ url_for('register') }}">Register</a>
+        <a class="{{ 'active' if ep == 'login' }}" href="{{ url_for('login') }}">Login</a>
+        <a class="{{ 'active' if ep == 'admin_login' }}" href="{{ url_for('admin_login') }}">Admin</a>
+        {% if ep == 'register' %}
+          <a class="btn btn-primary btn-sm" href="{{ url_for('register') }}">Register</a>
+        {% else %}
+          <a href="{{ url_for('register') }}">Register</a>
+        {% endif %}
       {% endif %}
     </div>
+
   </div>
 </nav>
 

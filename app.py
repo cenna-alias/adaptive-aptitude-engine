@@ -302,7 +302,7 @@ def admin_login():
         if u and u.is_admin and u.check_password(pwd):
             session.clear()
             session["user_id"] = u.id
-            flash("Superuser signed in.", "success")
+            flash("Signed in.", "success")
             return redirect(url_for("admin_dashboard"))
         flash("Invalid superuser credentials.", "danger")
     return render_template("admin_login.html")
